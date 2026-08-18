@@ -1,0 +1,12 @@
+node_modules
+dist
+.playwright-cli
+output
+.DS_Store
+*.local
+.env.production
+.env.staging
+npm-debug.log*
+vite.config.js
+vite.config.d.ts
+*.tsbuildinfo

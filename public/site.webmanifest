@@ -1,0 +1,14 @@
+{
+  "name": "帧足记 VoyaFrame",
+  "short_name": "帧足记",
+  "description": "在 3D 卫星地球上制作旅行路线动画",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#061018",
+  "theme_color": "#071018",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

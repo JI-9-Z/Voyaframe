@@ -1,0 +1,6326 @@
+[
+  {
+    "name": "北京",
+    "nameEn": "Beijing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "北京",
+    "provinceEn": "Beijing",
+    "latitude": 39.904989,
+    "longitude": 116.405285,
+    "aliases": [
+      "bei jing",
+      "beijing",
+      "北京市",
+      "北京市"
+    ],
+    "administrativeCode": "110100000000"
+  },
+  {
+    "name": "天津",
+    "nameEn": "Tianjin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "天津",
+    "provinceEn": "Tianjin",
+    "latitude": 39.125596,
+    "longitude": 117.190182,
+    "aliases": [
+      "tian jin",
+      "tianjin",
+      "天津市",
+      "天津市"
+    ],
+    "administrativeCode": "120100000000"
+  },
+  {
+    "name": "石家庄",
+    "nameEn": "Shijiazhuang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 38.042007,
+    "longitude": 114.514976,
+    "aliases": [
+      "shi jia zhuang",
+      "shijiazhuang",
+      "石家庄市",
+      "河北省"
+    ],
+    "administrativeCode": "130100000000"
+  },
+  {
+    "name": "唐山",
+    "nameEn": "Tangshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 39.63068,
+    "longitude": 118.180149,
+    "aliases": [
+      "tang shan",
+      "tangshan",
+      "唐山市",
+      "河北省"
+    ],
+    "administrativeCode": "130200000000"
+  },
+  {
+    "name": "秦皇岛",
+    "nameEn": "Qinhuangdao",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 39.888243,
+    "longitude": 119.52022,
+    "aliases": [
+      "qin huang dao",
+      "qinhuangdao",
+      "秦皇岛市",
+      "河北省"
+    ],
+    "administrativeCode": "130300000000"
+  },
+  {
+    "name": "邯郸",
+    "nameEn": "Handan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 36.625849,
+    "longitude": 114.53915,
+    "aliases": [
+      "han dan",
+      "handan",
+      "邯郸市",
+      "河北省"
+    ],
+    "administrativeCode": "130400000000"
+  },
+  {
+    "name": "邢台",
+    "nameEn": "Xingtai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 37.060227,
+    "longitude": 114.49742,
+    "aliases": [
+      "xing tai",
+      "xingtai",
+      "邢台市",
+      "河北省"
+    ],
+    "administrativeCode": "130500000000"
+  },
+  {
+    "name": "保定",
+    "nameEn": "Baoding",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 38.874476,
+    "longitude": 115.464523,
+    "aliases": [
+      "bao ding",
+      "baoding",
+      "保定市",
+      "河北省"
+    ],
+    "administrativeCode": "130600000000"
+  },
+  {
+    "name": "张家口",
+    "nameEn": "Zhangjiakou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 40.768931,
+    "longitude": 114.885895,
+    "aliases": [
+      "zhang jia kou",
+      "zhangjiakou",
+      "张家口市",
+      "河北省"
+    ],
+    "administrativeCode": "130700000000"
+  },
+  {
+    "name": "承德",
+    "nameEn": "Chengde",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 40.952942,
+    "longitude": 117.962749,
+    "aliases": [
+      "cheng de",
+      "chengde",
+      "承德市",
+      "河北省"
+    ],
+    "administrativeCode": "130800000000"
+  },
+  {
+    "name": "沧州",
+    "nameEn": "Cangzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 38.304676,
+    "longitude": 116.838715,
+    "aliases": [
+      "cang zhou",
+      "cangzhou",
+      "沧州市",
+      "河北省"
+    ],
+    "administrativeCode": "130900000000"
+  },
+  {
+    "name": "廊坊",
+    "nameEn": "Langfang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 39.538304,
+    "longitude": 116.683546,
+    "aliases": [
+      "lang fang",
+      "langfang",
+      "廊坊市",
+      "河北省"
+    ],
+    "administrativeCode": "131000000000"
+  },
+  {
+    "name": "衡水",
+    "nameEn": "Hengshui",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河北",
+    "provinceEn": "Hebei",
+    "latitude": 37.739367,
+    "longitude": 115.668987,
+    "aliases": [
+      "heng shui",
+      "hengshui",
+      "衡水市",
+      "河北省"
+    ],
+    "administrativeCode": "131100000000"
+  },
+  {
+    "name": "太原",
+    "nameEn": "Taiyuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 37.870451,
+    "longitude": 112.549656,
+    "aliases": [
+      "tai yuan",
+      "taiyuan",
+      "太原市",
+      "山西省"
+    ],
+    "administrativeCode": "140100000000"
+  },
+  {
+    "name": "大同",
+    "nameEn": "Datong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 40.09711,
+    "longitude": 113.366749,
+    "aliases": [
+      "da tong",
+      "datong",
+      "大同市",
+      "山西省"
+    ],
+    "administrativeCode": "140200000000"
+  },
+  {
+    "name": "阳泉",
+    "nameEn": "Yangquan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 37.857094,
+    "longitude": 113.580426,
+    "aliases": [
+      "yang quan",
+      "yangquan",
+      "阳泉市",
+      "山西省"
+    ],
+    "administrativeCode": "140300000000"
+  },
+  {
+    "name": "长治",
+    "nameEn": "Changzhi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 36.195142,
+    "longitude": 113.117394,
+    "aliases": [
+      "chang zhi",
+      "changzhi",
+      "长治市",
+      "山西省"
+    ],
+    "administrativeCode": "140400000000"
+  },
+  {
+    "name": "晋城",
+    "nameEn": "Jincheng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 35.491315,
+    "longitude": 112.852022,
+    "aliases": [
+      "jin cheng",
+      "jincheng",
+      "晋城市",
+      "山西省"
+    ],
+    "administrativeCode": "140500000000"
+  },
+  {
+    "name": "朔州",
+    "nameEn": "Shuozhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 39.331734,
+    "longitude": 112.432906,
+    "aliases": [
+      "shuo zhou",
+      "shuozhou",
+      "朔州市",
+      "山西省"
+    ],
+    "administrativeCode": "140600000000"
+  },
+  {
+    "name": "晋中",
+    "nameEn": "Jinzhong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 37.688006,
+    "longitude": 112.752633,
+    "aliases": [
+      "jin zhong",
+      "jinzhong",
+      "晋中市",
+      "山西省"
+    ],
+    "administrativeCode": "140700000000"
+  },
+  {
+    "name": "运城",
+    "nameEn": "Yuncheng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 35.02667,
+    "longitude": 111.007051,
+    "aliases": [
+      "yun cheng",
+      "yuncheng",
+      "运城市",
+      "山西省"
+    ],
+    "administrativeCode": "140800000000"
+  },
+  {
+    "name": "忻州",
+    "nameEn": "Xinzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 38.415958,
+    "longitude": 112.734149,
+    "aliases": [
+      "xin zhou",
+      "xinzhou",
+      "忻州市",
+      "山西省"
+    ],
+    "administrativeCode": "140900000000"
+  },
+  {
+    "name": "临汾",
+    "nameEn": "Linfen",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 36.088581,
+    "longitude": 111.51931,
+    "aliases": [
+      "lin fen",
+      "linfen",
+      "临汾市",
+      "山西省"
+    ],
+    "administrativeCode": "141000000000"
+  },
+  {
+    "name": "吕梁",
+    "nameEn": "Lvliang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山西",
+    "provinceEn": "Shanxi",
+    "latitude": 37.518996,
+    "longitude": 111.14454,
+    "aliases": [
+      "lv liang",
+      "lvliang",
+      "吕梁市",
+      "山西省"
+    ],
+    "administrativeCode": "141100000000"
+  },
+  {
+    "name": "呼和浩特",
+    "nameEn": "Huhehaote",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 40.842127,
+    "longitude": 111.748814,
+    "aliases": [
+      "hu he hao te",
+      "huhehaote",
+      "呼和浩特市",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "150100000000"
+  },
+  {
+    "name": "包头",
+    "nameEn": "Baotou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 40.621327,
+    "longitude": 109.95315,
+    "aliases": [
+      "bao tou",
+      "baotou",
+      "包头市",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "150200000000"
+  },
+  {
+    "name": "乌海",
+    "nameEn": "Wuhai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 39.655048,
+    "longitude": 106.79415,
+    "aliases": [
+      "wu hai",
+      "wuhai",
+      "乌海市",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "150300000000"
+  },
+  {
+    "name": "赤峰",
+    "nameEn": "Chifeng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 42.256876,
+    "longitude": 118.887613,
+    "aliases": [
+      "chi feng",
+      "chifeng",
+      "赤峰市",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "150400000000"
+  },
+  {
+    "name": "通辽",
+    "nameEn": "Tongliao",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 43.653566,
+    "longitude": 122.243309,
+    "aliases": [
+      "tong liao",
+      "tongliao",
+      "通辽市",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "150500000000"
+  },
+  {
+    "name": "鄂尔多斯",
+    "nameEn": "Eerduosi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 39.608744,
+    "longitude": 109.782473,
+    "aliases": [
+      "e er duo si",
+      "eerduosi",
+      "鄂尔多斯市",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "150600000000"
+  },
+  {
+    "name": "呼伦贝尔",
+    "nameEn": "Hulunbeier",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 49.166536,
+    "longitude": 119.77845,
+    "aliases": [
+      "hu lun bei er",
+      "hulunbeier",
+      "呼伦贝尔市",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "150700000000"
+  },
+  {
+    "name": "巴彦淖尔",
+    "nameEn": "Bayannaoer",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 40.742987,
+    "longitude": 107.387767,
+    "aliases": [
+      "ba yan nao er",
+      "bayannaoer",
+      "巴彦淖尔市",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "150800000000"
+  },
+  {
+    "name": "乌兰察布",
+    "nameEn": "Wulanchabu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 40.994526,
+    "longitude": 113.132227,
+    "aliases": [
+      "wu lan cha bu",
+      "wulanchabu",
+      "乌兰察布市",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "150900000000"
+  },
+  {
+    "name": "兴安",
+    "nameEn": "Xingan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 46.082373,
+    "longitude": 122.037796,
+    "aliases": [
+      "xing an",
+      "xingan",
+      "兴安盟",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "152200000000"
+  },
+  {
+    "name": "锡林郭勒",
+    "nameEn": "Xilinguole",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 43.933212,
+    "longitude": 116.047387,
+    "aliases": [
+      "xi lin guo le",
+      "xilinguole",
+      "锡林郭勒盟",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "152500000000"
+  },
+  {
+    "name": "阿拉善",
+    "nameEn": "Alashan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "内蒙古",
+    "provinceEn": "Neimenggu",
+    "latitude": 38.851554,
+    "longitude": 105.729135,
+    "aliases": [
+      "a la shan",
+      "alashan",
+      "阿拉善盟",
+      "内蒙古自治区"
+    ],
+    "administrativeCode": "152900000000"
+  },
+  {
+    "name": "沈阳",
+    "nameEn": "Shenyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 41.677576,
+    "longitude": 123.464675,
+    "aliases": [
+      "shen yang",
+      "shenyang",
+      "沈阳市",
+      "辽宁省"
+    ],
+    "administrativeCode": "210100000000"
+  },
+  {
+    "name": "大连",
+    "nameEn": "Dalian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 38.913962,
+    "longitude": 121.614786,
+    "aliases": [
+      "da lian",
+      "dalian",
+      "大连市",
+      "辽宁省"
+    ],
+    "administrativeCode": "210200000000"
+  },
+  {
+    "name": "鞍山",
+    "nameEn": "Anshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 41.108239,
+    "longitude": 122.994183,
+    "aliases": [
+      "an shan",
+      "anshan",
+      "鞍山市",
+      "辽宁省"
+    ],
+    "administrativeCode": "210300000000"
+  },
+  {
+    "name": "抚顺",
+    "nameEn": "Fushun",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 41.881311,
+    "longitude": 123.957053,
+    "aliases": [
+      "fu shun",
+      "fushun",
+      "抚顺市",
+      "辽宁省"
+    ],
+    "administrativeCode": "210400000000"
+  },
+  {
+    "name": "本溪",
+    "nameEn": "Benxi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 41.294123,
+    "longitude": 123.766669,
+    "aliases": [
+      "ben xi",
+      "benxi",
+      "本溪市",
+      "辽宁省"
+    ],
+    "administrativeCode": "210500000000"
+  },
+  {
+    "name": "丹东",
+    "nameEn": "Dandong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 40.000646,
+    "longitude": 124.354419,
+    "aliases": [
+      "dan dong",
+      "dandong",
+      "丹东市",
+      "辽宁省"
+    ],
+    "administrativeCode": "210600000000"
+  },
+  {
+    "name": "锦州",
+    "nameEn": "Jinzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 41.096114,
+    "longitude": 121.126859,
+    "aliases": [
+      "jin zhou",
+      "jinzhou",
+      "锦州市",
+      "辽宁省"
+    ],
+    "administrativeCode": "210700000000"
+  },
+  {
+    "name": "营口",
+    "nameEn": "Yingkou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 40.625027,
+    "longitude": 122.219148,
+    "aliases": [
+      "ying kou",
+      "yingkou",
+      "营口市",
+      "辽宁省"
+    ],
+    "administrativeCode": "210800000000"
+  },
+  {
+    "name": "阜新",
+    "nameEn": "Fuxin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 42.022028,
+    "longitude": 121.670052,
+    "aliases": [
+      "fu xin",
+      "fuxin",
+      "阜新市",
+      "辽宁省"
+    ],
+    "administrativeCode": "210900000000"
+  },
+  {
+    "name": "辽阳",
+    "nameEn": "Liaoyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 41.267396,
+    "longitude": 123.239669,
+    "aliases": [
+      "liao yang",
+      "liaoyang",
+      "辽阳市",
+      "辽宁省"
+    ],
+    "administrativeCode": "211000000000"
+  },
+  {
+    "name": "盘锦",
+    "nameEn": "Panjin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 40.71956,
+    "longitude": 122.170729,
+    "aliases": [
+      "pan jin",
+      "panjin",
+      "盘锦市",
+      "辽宁省"
+    ],
+    "administrativeCode": "211100000000"
+  },
+  {
+    "name": "铁岭",
+    "nameEn": "Tieling",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 42.223709,
+    "longitude": 123.726008,
+    "aliases": [
+      "tie ling",
+      "tieling",
+      "铁岭市",
+      "辽宁省"
+    ],
+    "administrativeCode": "211200000000"
+  },
+  {
+    "name": "朝阳",
+    "nameEn": "Chaoyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 41.601855,
+    "longitude": 120.488801,
+    "aliases": [
+      "chao yang",
+      "chaoyang",
+      "朝阳市",
+      "辽宁省"
+    ],
+    "administrativeCode": "211300000000"
+  },
+  {
+    "name": "葫芦岛",
+    "nameEn": "Huludao",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "辽宁",
+    "provinceEn": "Liaoning",
+    "latitude": 40.710974,
+    "longitude": 120.836783,
+    "aliases": [
+      "hu lu dao",
+      "huludao",
+      "葫芦岛市",
+      "辽宁省"
+    ],
+    "administrativeCode": "211400000000"
+  },
+  {
+    "name": "长春",
+    "nameEn": "Changchun",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "吉林",
+    "provinceEn": "Jilin",
+    "latitude": 43.816996,
+    "longitude": 125.323643,
+    "aliases": [
+      "chang chun",
+      "changchun",
+      "长春市",
+      "吉林省"
+    ],
+    "administrativeCode": "220100000000"
+  },
+  {
+    "name": "吉林市",
+    "nameEn": "Jilinshi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "吉林",
+    "provinceEn": "Jilin",
+    "latitude": 43.838132,
+    "longitude": 126.549719,
+    "aliases": [
+      "ji lin shi",
+      "jilinshi",
+      "吉林市",
+      "吉林省"
+    ],
+    "administrativeCode": "220200000000"
+  },
+  {
+    "name": "四平",
+    "nameEn": "Siping",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "吉林",
+    "provinceEn": "Jilin",
+    "latitude": 43.166764,
+    "longitude": 124.350599,
+    "aliases": [
+      "si ping",
+      "siping",
+      "四平市",
+      "吉林省"
+    ],
+    "administrativeCode": "220300000000"
+  },
+  {
+    "name": "辽源",
+    "nameEn": "Liaoyuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "吉林",
+    "provinceEn": "Jilin",
+    "latitude": 42.887961,
+    "longitude": 125.144676,
+    "aliases": [
+      "liao yuan",
+      "liaoyuan",
+      "辽源市",
+      "吉林省"
+    ],
+    "administrativeCode": "220400000000"
+  },
+  {
+    "name": "通化",
+    "nameEn": "Tonghua",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "吉林",
+    "provinceEn": "Jilin",
+    "latitude": 41.728312,
+    "longitude": 125.939721,
+    "aliases": [
+      "tong hua",
+      "tonghua",
+      "通化市",
+      "吉林省"
+    ],
+    "administrativeCode": "220500000000"
+  },
+  {
+    "name": "白山",
+    "nameEn": "Baishan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "吉林",
+    "provinceEn": "Jilin",
+    "latitude": 41.944132,
+    "longitude": 126.414274,
+    "aliases": [
+      "bai shan",
+      "baishan",
+      "白山市",
+      "吉林省"
+    ],
+    "administrativeCode": "220600000000"
+  },
+  {
+    "name": "松原",
+    "nameEn": "Songyuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "吉林",
+    "provinceEn": "Jilin",
+    "latitude": 45.14191,
+    "longitude": 124.825321,
+    "aliases": [
+      "song yuan",
+      "songyuan",
+      "松原市",
+      "吉林省"
+    ],
+    "administrativeCode": "220700000000"
+  },
+  {
+    "name": "白城",
+    "nameEn": "Baicheng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "吉林",
+    "provinceEn": "Jilin",
+    "latitude": 45.620131,
+    "longitude": 122.838102,
+    "aliases": [
+      "bai cheng",
+      "baicheng",
+      "白城市",
+      "吉林省"
+    ],
+    "administrativeCode": "220800000000"
+  },
+  {
+    "name": "延边",
+    "nameEn": "Yanbian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "吉林",
+    "provinceEn": "Jilin",
+    "latitude": 42.909426,
+    "longitude": 129.470605,
+    "aliases": [
+      "yan bian",
+      "yanbian",
+      "延边朝鲜族自治州",
+      "吉林省"
+    ],
+    "administrativeCode": "222400000000"
+  },
+  {
+    "name": "哈尔滨",
+    "nameEn": "Haerbin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 45.802981,
+    "longitude": 126.53505,
+    "aliases": [
+      "ha er bin",
+      "haerbin",
+      "哈尔滨市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "230100000000"
+  },
+  {
+    "name": "齐齐哈尔",
+    "nameEn": "Qiqihaer",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 47.354892,
+    "longitude": 123.918193,
+    "aliases": [
+      "qi qi ha er",
+      "qiqihaer",
+      "齐齐哈尔市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "230200000000"
+  },
+  {
+    "name": "鸡西",
+    "nameEn": "Jixi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 45.295087,
+    "longitude": 130.969385,
+    "aliases": [
+      "ji xi",
+      "jixi",
+      "鸡西市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "230300000000"
+  },
+  {
+    "name": "鹤岗",
+    "nameEn": "Hegang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 47.350659,
+    "longitude": 130.297687,
+    "aliases": [
+      "he gang",
+      "hegang",
+      "鹤岗市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "230400000000"
+  },
+  {
+    "name": "双鸭山",
+    "nameEn": "Shuangyashan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 46.676157,
+    "longitude": 131.141563,
+    "aliases": [
+      "shuang ya shan",
+      "shuangyashan",
+      "双鸭山市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "230500000000"
+  },
+  {
+    "name": "大庆",
+    "nameEn": "Daqing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 46.589498,
+    "longitude": 125.104078,
+    "aliases": [
+      "da qing",
+      "daqing",
+      "大庆市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "230600000000"
+  },
+  {
+    "name": "伊春",
+    "nameEn": "Yichun",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 47.728332,
+    "longitude": 128.840863,
+    "aliases": [
+      "yi chun",
+      "yichun",
+      "伊春市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "230700000000"
+  },
+  {
+    "name": "佳木斯",
+    "nameEn": "Jiamusi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 46.800002,
+    "longitude": 130.318916,
+    "aliases": [
+      "jia mu si",
+      "jiamusi",
+      "佳木斯市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "230800000000"
+  },
+  {
+    "name": "七台河",
+    "nameEn": "Qitaihe",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 45.771178,
+    "longitude": 131.003015,
+    "aliases": [
+      "qi tai he",
+      "qitaihe",
+      "七台河市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "230900000000"
+  },
+  {
+    "name": "牡丹江",
+    "nameEn": "Mudanjiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 44.551486,
+    "longitude": 129.632928,
+    "aliases": [
+      "mu dan jiang",
+      "mudanjiang",
+      "牡丹江市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "231000000000"
+  },
+  {
+    "name": "黑河",
+    "nameEn": "Heihe",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 50.244887,
+    "longitude": 127.528226,
+    "aliases": [
+      "hei he",
+      "heihe",
+      "黑河市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "231100000000"
+  },
+  {
+    "name": "绥化",
+    "nameEn": "Suihua",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 46.654147,
+    "longitude": 126.968714,
+    "aliases": [
+      "sui hua",
+      "suihua",
+      "绥化市",
+      "黑龙江省"
+    ],
+    "administrativeCode": "231200000000"
+  },
+  {
+    "name": "大兴安岭",
+    "nameEn": "Daxinganling",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "黑龙江",
+    "provinceEn": "Heilongjiang",
+    "latitude": 50.41129,
+    "longitude": 124.11786,
+    "aliases": [
+      "da xing an ling",
+      "daxinganling",
+      "大兴安岭地区",
+      "黑龙江省"
+    ],
+    "administrativeCode": "232700000000"
+  },
+  {
+    "name": "上海",
+    "nameEn": "Shanghai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "上海",
+    "provinceEn": "Shanghai",
+    "latitude": 31.231706,
+    "longitude": 121.472644,
+    "aliases": [
+      "shang hai",
+      "shanghai",
+      "上海市",
+      "上海市"
+    ],
+    "administrativeCode": "310100000000"
+  },
+  {
+    "name": "南京",
+    "nameEn": "Nanjing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 32.059344,
+    "longitude": 118.796624,
+    "aliases": [
+      "nan jing",
+      "nanjing",
+      "南京市",
+      "江苏省"
+    ],
+    "administrativeCode": "320100000000"
+  },
+  {
+    "name": "无锡",
+    "nameEn": "Wuxi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 31.491064,
+    "longitude": 120.311889,
+    "aliases": [
+      "wu xi",
+      "wuxi",
+      "无锡市",
+      "江苏省"
+    ],
+    "administrativeCode": "320200000000"
+  },
+  {
+    "name": "徐州",
+    "nameEn": "Xuzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 34.204224,
+    "longitude": 117.283752,
+    "aliases": [
+      "xu zhou",
+      "xuzhou",
+      "徐州市",
+      "江苏省"
+    ],
+    "administrativeCode": "320300000000"
+  },
+  {
+    "name": "常州",
+    "nameEn": "Changzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 31.811313,
+    "longitude": 119.974092,
+    "aliases": [
+      "chang zhou",
+      "changzhou",
+      "常州市",
+      "江苏省"
+    ],
+    "administrativeCode": "320400000000"
+  },
+  {
+    "name": "苏州",
+    "nameEn": "Suzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 31.299758,
+    "longitude": 120.585294,
+    "aliases": [
+      "su zhou",
+      "suzhou",
+      "苏州市",
+      "江苏省"
+    ],
+    "administrativeCode": "320500000000"
+  },
+  {
+    "name": "南通",
+    "nameEn": "Nantong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 31.981269,
+    "longitude": 120.894522,
+    "aliases": [
+      "nan tong",
+      "nantong",
+      "南通市",
+      "江苏省"
+    ],
+    "administrativeCode": "320600000000"
+  },
+  {
+    "name": "连云港",
+    "nameEn": "Lianyungang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 34.596639,
+    "longitude": 119.221487,
+    "aliases": [
+      "lian yun gang",
+      "lianyungang",
+      "连云港市",
+      "江苏省"
+    ],
+    "administrativeCode": "320700000000"
+  },
+  {
+    "name": "淮安",
+    "nameEn": "Huaian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 33.551495,
+    "longitude": 119.113166,
+    "aliases": [
+      "huai an",
+      "huaian",
+      "淮安市",
+      "江苏省"
+    ],
+    "administrativeCode": "320800000000"
+  },
+  {
+    "name": "盐城",
+    "nameEn": "Yancheng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 33.348176,
+    "longitude": 120.16263,
+    "aliases": [
+      "yan cheng",
+      "yancheng",
+      "盐城市",
+      "江苏省"
+    ],
+    "administrativeCode": "320900000000"
+  },
+  {
+    "name": "扬州",
+    "nameEn": "Yangzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 32.394404,
+    "longitude": 119.412834,
+    "aliases": [
+      "yang zhou",
+      "yangzhou",
+      "扬州市",
+      "江苏省"
+    ],
+    "administrativeCode": "321000000000"
+  },
+  {
+    "name": "镇江",
+    "nameEn": "Zhenjiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 32.188141,
+    "longitude": 119.424441,
+    "aliases": [
+      "zhen jiang",
+      "zhenjiang",
+      "镇江市",
+      "江苏省"
+    ],
+    "administrativeCode": "321100000000"
+  },
+  {
+    "name": "泰州",
+    "nameEn": "Taizhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 32.456692,
+    "longitude": 119.922883,
+    "aliases": [
+      "tai zhou",
+      "taizhou",
+      "泰州市",
+      "江苏省"
+    ],
+    "administrativeCode": "321200000000"
+  },
+  {
+    "name": "宿迁",
+    "nameEn": "Suqian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江苏",
+    "provinceEn": "Jiangsu",
+    "latitude": 33.963186,
+    "longitude": 118.275228,
+    "aliases": [
+      "su qian",
+      "suqian",
+      "宿迁市",
+      "江苏省"
+    ],
+    "administrativeCode": "321300000000"
+  },
+  {
+    "name": "杭州",
+    "nameEn": "Hangzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 30.246566,
+    "longitude": 120.209903,
+    "aliases": [
+      "hang zhou",
+      "hangzhou",
+      "杭州市",
+      "浙江省"
+    ],
+    "administrativeCode": "330100000000"
+  },
+  {
+    "name": "宁波",
+    "nameEn": "Ningbo",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 29.860258,
+    "longitude": 121.62454,
+    "aliases": [
+      "ning bo",
+      "ningbo",
+      "宁波市",
+      "浙江省"
+    ],
+    "administrativeCode": "330200000000"
+  },
+  {
+    "name": "温州",
+    "nameEn": "Wenzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 27.993849,
+    "longitude": 120.699279,
+    "aliases": [
+      "wen zhou",
+      "wenzhou",
+      "温州市",
+      "浙江省"
+    ],
+    "administrativeCode": "330300000000"
+  },
+  {
+    "name": "嘉兴",
+    "nameEn": "Jiaxing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 30.746814,
+    "longitude": 120.755623,
+    "aliases": [
+      "jia xing",
+      "jiaxing",
+      "嘉兴市",
+      "浙江省"
+    ],
+    "administrativeCode": "330400000000"
+  },
+  {
+    "name": "湖州",
+    "nameEn": "Huzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 30.894178,
+    "longitude": 120.086881,
+    "aliases": [
+      "hu zhou",
+      "huzhou",
+      "湖州市",
+      "浙江省"
+    ],
+    "administrativeCode": "330500000000"
+  },
+  {
+    "name": "绍兴",
+    "nameEn": "Shaoxing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 30.051549,
+    "longitude": 120.582886,
+    "aliases": [
+      "shao xing",
+      "shaoxing",
+      "绍兴市",
+      "浙江省"
+    ],
+    "administrativeCode": "330600000000"
+  },
+  {
+    "name": "金华",
+    "nameEn": "Jinhua",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 29.079195,
+    "longitude": 119.647265,
+    "aliases": [
+      "jin hua",
+      "jinhua",
+      "金华市",
+      "浙江省"
+    ],
+    "administrativeCode": "330700000000"
+  },
+  {
+    "name": "衢州",
+    "nameEn": "Quzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 28.970229,
+    "longitude": 118.859307,
+    "aliases": [
+      "qu zhou",
+      "quzhou",
+      "衢州市",
+      "浙江省"
+    ],
+    "administrativeCode": "330800000000"
+  },
+  {
+    "name": "舟山",
+    "nameEn": "Zhoushan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 29.985578,
+    "longitude": 122.207395,
+    "aliases": [
+      "zhou shan",
+      "zhoushan",
+      "舟山市",
+      "浙江省"
+    ],
+    "administrativeCode": "330900000000"
+  },
+  {
+    "name": "台州",
+    "nameEn": "Taizhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 28.655716,
+    "longitude": 121.42079,
+    "aliases": [
+      "tai zhou",
+      "taizhou",
+      "台州市",
+      "浙江省"
+    ],
+    "administrativeCode": "331000000000"
+  },
+  {
+    "name": "丽水",
+    "nameEn": "Lishui",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "浙江",
+    "provinceEn": "Zhejiang",
+    "latitude": 28.467694,
+    "longitude": 119.923249,
+    "aliases": [
+      "li shui",
+      "lishui",
+      "丽水市",
+      "浙江省"
+    ],
+    "administrativeCode": "331100000000"
+  },
+  {
+    "name": "合肥",
+    "nameEn": "Hefei",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 31.820567,
+    "longitude": 117.227267,
+    "aliases": [
+      "he fei",
+      "hefei",
+      "合肥市",
+      "安徽省"
+    ],
+    "administrativeCode": "340100000000"
+  },
+  {
+    "name": "芜湖",
+    "nameEn": "Wuhu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 31.352614,
+    "longitude": 118.433065,
+    "aliases": [
+      "wu hu",
+      "wuhu",
+      "芜湖市",
+      "安徽省"
+    ],
+    "administrativeCode": "340200000000"
+  },
+  {
+    "name": "蚌埠",
+    "nameEn": "Bengbu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 32.91682,
+    "longitude": 117.388566,
+    "aliases": [
+      "beng bu",
+      "bengbu",
+      "蚌埠市",
+      "安徽省"
+    ],
+    "administrativeCode": "340300000000"
+  },
+  {
+    "name": "淮南",
+    "nameEn": "Huainan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 32.585384,
+    "longitude": 117.018603,
+    "aliases": [
+      "huai nan",
+      "huainan",
+      "淮南市",
+      "安徽省"
+    ],
+    "administrativeCode": "340400000000"
+  },
+  {
+    "name": "马鞍山",
+    "nameEn": "Maanshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 31.668765,
+    "longitude": 118.50685,
+    "aliases": [
+      "ma an shan",
+      "maanshan",
+      "马鞍山市",
+      "安徽省"
+    ],
+    "administrativeCode": "340500000000"
+  },
+  {
+    "name": "淮北",
+    "nameEn": "Huaibei",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 33.956264,
+    "longitude": 116.798362,
+    "aliases": [
+      "huai bei",
+      "huaibei",
+      "淮北市",
+      "安徽省"
+    ],
+    "administrativeCode": "340600000000"
+  },
+  {
+    "name": "铜陵",
+    "nameEn": "Tongling",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 30.945214,
+    "longitude": 117.811298,
+    "aliases": [
+      "tong ling",
+      "tongling",
+      "铜陵市",
+      "安徽省"
+    ],
+    "administrativeCode": "340700000000"
+  },
+  {
+    "name": "安庆",
+    "nameEn": "Anqing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 30.531828,
+    "longitude": 117.115349,
+    "aliases": [
+      "an qing",
+      "anqing",
+      "安庆市",
+      "安徽省"
+    ],
+    "administrativeCode": "340800000000"
+  },
+  {
+    "name": "黄山",
+    "nameEn": "Huangshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 29.714886,
+    "longitude": 118.337643,
+    "aliases": [
+      "huang shan",
+      "huangshan",
+      "黄山市",
+      "安徽省"
+    ],
+    "administrativeCode": "341000000000"
+  },
+  {
+    "name": "滁州",
+    "nameEn": "Chuzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 32.255904,
+    "longitude": 118.333439,
+    "aliases": [
+      "chu zhou",
+      "chuzhou",
+      "滁州市",
+      "安徽省"
+    ],
+    "administrativeCode": "341100000000"
+  },
+  {
+    "name": "阜阳",
+    "nameEn": "Fuyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 32.891032,
+    "longitude": 115.814252,
+    "aliases": [
+      "fu yang",
+      "fuyang",
+      "阜阳市",
+      "安徽省"
+    ],
+    "administrativeCode": "341200000000"
+  },
+  {
+    "name": "宿州",
+    "nameEn": "Suzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 33.647726,
+    "longitude": 116.96419,
+    "aliases": [
+      "su zhou",
+      "suzhou",
+      "宿州市",
+      "安徽省"
+    ],
+    "administrativeCode": "341300000000"
+  },
+  {
+    "name": "六安",
+    "nameEn": "Luan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 31.735892,
+    "longitude": 116.519729,
+    "aliases": [
+      "lu an",
+      "luan",
+      "六安市",
+      "安徽省"
+    ],
+    "administrativeCode": "341500000000"
+  },
+  {
+    "name": "亳州",
+    "nameEn": "Bozhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 33.846285,
+    "longitude": 115.778588,
+    "aliases": [
+      "bo zhou",
+      "bozhou",
+      "亳州市",
+      "安徽省"
+    ],
+    "administrativeCode": "341600000000"
+  },
+  {
+    "name": "池州",
+    "nameEn": "Chizhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 30.674264,
+    "longitude": 117.495663,
+    "aliases": [
+      "chi zhou",
+      "chizhou",
+      "池州市",
+      "安徽省"
+    ],
+    "administrativeCode": "341700000000"
+  },
+  {
+    "name": "宣城",
+    "nameEn": "Xuancheng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "安徽",
+    "provinceEn": "Anhui",
+    "latitude": 30.939278,
+    "longitude": 118.759127,
+    "aliases": [
+      "xuan cheng",
+      "xuancheng",
+      "宣城市",
+      "安徽省"
+    ],
+    "administrativeCode": "341800000000"
+  },
+  {
+    "name": "福州",
+    "nameEn": "Fuzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "福建",
+    "provinceEn": "Fujian",
+    "latitude": 26.074286,
+    "longitude": 119.296411,
+    "aliases": [
+      "fu zhou",
+      "fuzhou",
+      "福州市",
+      "福建省"
+    ],
+    "administrativeCode": "350100000000"
+  },
+  {
+    "name": "厦门",
+    "nameEn": "Xiamen",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "福建",
+    "provinceEn": "Fujian",
+    "latitude": 24.479627,
+    "longitude": 118.08891,
+    "aliases": [
+      "xia men",
+      "xiamen",
+      "厦门市",
+      "福建省"
+    ],
+    "administrativeCode": "350200000000"
+  },
+  {
+    "name": "莆田",
+    "nameEn": "Putian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "福建",
+    "provinceEn": "Fujian",
+    "latitude": 25.454202,
+    "longitude": 119.007662,
+    "aliases": [
+      "pu tian",
+      "putian",
+      "莆田市",
+      "福建省"
+    ],
+    "administrativeCode": "350300000000"
+  },
+  {
+    "name": "三明",
+    "nameEn": "Sanming",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "福建",
+    "provinceEn": "Fujian",
+    "latitude": 26.263455,
+    "longitude": 117.638919,
+    "aliases": [
+      "san ming",
+      "sanming",
+      "三明市",
+      "福建省"
+    ],
+    "administrativeCode": "350400000000"
+  },
+  {
+    "name": "泉州",
+    "nameEn": "Quanzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "福建",
+    "provinceEn": "Fujian",
+    "latitude": 24.874452,
+    "longitude": 118.675724,
+    "aliases": [
+      "quan zhou",
+      "quanzhou",
+      "泉州市",
+      "福建省"
+    ],
+    "administrativeCode": "350500000000"
+  },
+  {
+    "name": "漳州",
+    "nameEn": "Zhangzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "福建",
+    "provinceEn": "Fujian",
+    "latitude": 24.515297,
+    "longitude": 117.647298,
+    "aliases": [
+      "zhang zhou",
+      "zhangzhou",
+      "漳州市",
+      "福建省"
+    ],
+    "administrativeCode": "350600000000"
+  },
+  {
+    "name": "南平",
+    "nameEn": "Nanping",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "福建",
+    "provinceEn": "Fujian",
+    "latitude": 27.382829,
+    "longitude": 118.081325,
+    "aliases": [
+      "nan ping",
+      "nanping",
+      "南平市",
+      "福建省"
+    ],
+    "administrativeCode": "350700000000"
+  },
+  {
+    "name": "龙岩",
+    "nameEn": "Longyan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "福建",
+    "provinceEn": "Fujian",
+    "latitude": 25.075884,
+    "longitude": 117.017362,
+    "aliases": [
+      "long yan",
+      "longyan",
+      "龙岩市",
+      "福建省"
+    ],
+    "administrativeCode": "350800000000"
+  },
+  {
+    "name": "宁德",
+    "nameEn": "Ningde",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "福建",
+    "provinceEn": "Fujian",
+    "latitude": 26.666222,
+    "longitude": 119.547729,
+    "aliases": [
+      "ning de",
+      "ningde",
+      "宁德市",
+      "福建省"
+    ],
+    "administrativeCode": "350900000000"
+  },
+  {
+    "name": "南昌",
+    "nameEn": "Nanchang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 28.682976,
+    "longitude": 115.857972,
+    "aliases": [
+      "nan chang",
+      "nanchang",
+      "南昌市",
+      "江西省"
+    ],
+    "administrativeCode": "360100000000"
+  },
+  {
+    "name": "景德镇",
+    "nameEn": "Jingdezhen",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 29.2744,
+    "longitude": 117.184892,
+    "aliases": [
+      "jing de zhen",
+      "jingdezhen",
+      "景德镇市",
+      "江西省"
+    ],
+    "administrativeCode": "360200000000"
+  },
+  {
+    "name": "萍乡",
+    "nameEn": "Pingxiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 27.658721,
+    "longitude": 113.887147,
+    "aliases": [
+      "ping xiang",
+      "pingxiang",
+      "萍乡市",
+      "江西省"
+    ],
+    "administrativeCode": "360300000000"
+  },
+  {
+    "name": "九江",
+    "nameEn": "Jiujiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 29.66116,
+    "longitude": 115.95356,
+    "aliases": [
+      "jiu jiang",
+      "jiujiang",
+      "九江市",
+      "江西省"
+    ],
+    "administrativeCode": "360400000000"
+  },
+  {
+    "name": "新余",
+    "nameEn": "Xinyu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 27.818553,
+    "longitude": 114.916665,
+    "aliases": [
+      "xin yu",
+      "xinyu",
+      "新余市",
+      "江西省"
+    ],
+    "administrativeCode": "360500000000"
+  },
+  {
+    "name": "鹰潭",
+    "nameEn": "Yingtan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 28.272092,
+    "longitude": 117.039532,
+    "aliases": [
+      "ying tan",
+      "yingtan",
+      "鹰潭市",
+      "江西省"
+    ],
+    "administrativeCode": "360600000000"
+  },
+  {
+    "name": "赣州",
+    "nameEn": "Ganzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 25.831139,
+    "longitude": 114.933494,
+    "aliases": [
+      "gan zhou",
+      "ganzhou",
+      "赣州市",
+      "江西省"
+    ],
+    "administrativeCode": "360700000000"
+  },
+  {
+    "name": "吉安",
+    "nameEn": "Jian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 27.091243,
+    "longitude": 114.96681,
+    "aliases": [
+      "ji an",
+      "jian",
+      "吉安市",
+      "江西省"
+    ],
+    "administrativeCode": "360800000000"
+  },
+  {
+    "name": "宜春",
+    "nameEn": "Yichun",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 27.816245,
+    "longitude": 114.416826,
+    "aliases": [
+      "yi chun",
+      "yichun",
+      "宜春市",
+      "江西省"
+    ],
+    "administrativeCode": "360900000000"
+  },
+  {
+    "name": "抚州",
+    "nameEn": "Fuzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 27.948979,
+    "longitude": 116.358054,
+    "aliases": [
+      "fu zhou",
+      "fuzhou",
+      "抚州市",
+      "江西省"
+    ],
+    "administrativeCode": "361000000000"
+  },
+  {
+    "name": "上饶",
+    "nameEn": "Shangrao",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "江西",
+    "provinceEn": "Jiangxi",
+    "latitude": 28.45513,
+    "longitude": 117.943064,
+    "aliases": [
+      "shang rao",
+      "shangrao",
+      "上饶市",
+      "江西省"
+    ],
+    "administrativeCode": "361100000000"
+  },
+  {
+    "name": "济南",
+    "nameEn": "Jinan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 36.652069,
+    "longitude": 117.120128,
+    "aliases": [
+      "ji nan",
+      "jinan",
+      "济南市",
+      "山东省"
+    ],
+    "administrativeCode": "370100000000"
+  },
+  {
+    "name": "青岛",
+    "nameEn": "Qingdao",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 36.066938,
+    "longitude": 120.382665,
+    "aliases": [
+      "qing dao",
+      "qingdao",
+      "青岛市",
+      "山东省"
+    ],
+    "administrativeCode": "370200000000"
+  },
+  {
+    "name": "淄博",
+    "nameEn": "Zibo",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 36.813787,
+    "longitude": 118.054994,
+    "aliases": [
+      "zi bo",
+      "zibo",
+      "淄博市",
+      "山东省"
+    ],
+    "administrativeCode": "370300000000"
+  },
+  {
+    "name": "枣庄",
+    "nameEn": "Zaozhuang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 34.810858,
+    "longitude": 117.323759,
+    "aliases": [
+      "zao zhuang",
+      "zaozhuang",
+      "枣庄市",
+      "山东省"
+    ],
+    "administrativeCode": "370400000000"
+  },
+  {
+    "name": "东营",
+    "nameEn": "Dongying",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 37.433992,
+    "longitude": 118.674633,
+    "aliases": [
+      "dong ying",
+      "dongying",
+      "东营市",
+      "山东省"
+    ],
+    "administrativeCode": "370500000000"
+  },
+  {
+    "name": "烟台",
+    "nameEn": "Yantai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 37.464551,
+    "longitude": 121.447755,
+    "aliases": [
+      "yan tai",
+      "yantai",
+      "烟台市",
+      "山东省"
+    ],
+    "administrativeCode": "370600000000"
+  },
+  {
+    "name": "潍坊",
+    "nameEn": "Weifang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 36.707668,
+    "longitude": 119.161721,
+    "aliases": [
+      "wei fang",
+      "weifang",
+      "潍坊市",
+      "山东省"
+    ],
+    "administrativeCode": "370700000000"
+  },
+  {
+    "name": "济宁",
+    "nameEn": "Jining",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 35.415117,
+    "longitude": 116.587116,
+    "aliases": [
+      "ji ning",
+      "jining",
+      "济宁市",
+      "山东省"
+    ],
+    "administrativeCode": "370800000000"
+  },
+  {
+    "name": "泰安",
+    "nameEn": "Taian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 36.201784,
+    "longitude": 117.086963,
+    "aliases": [
+      "tai an",
+      "taian",
+      "泰安市",
+      "山东省"
+    ],
+    "administrativeCode": "370900000000"
+  },
+  {
+    "name": "威海",
+    "nameEn": "Weihai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 37.513315,
+    "longitude": 122.120519,
+    "aliases": [
+      "wei hai",
+      "weihai",
+      "威海市",
+      "山东省"
+    ],
+    "administrativeCode": "371000000000"
+  },
+  {
+    "name": "日照",
+    "nameEn": "Rizhao",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 35.416912,
+    "longitude": 119.52685,
+    "aliases": [
+      "ri zhao",
+      "rizhao",
+      "日照市",
+      "山东省"
+    ],
+    "administrativeCode": "371100000000"
+  },
+  {
+    "name": "临沂",
+    "nameEn": "Linyi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 35.103771,
+    "longitude": 118.356464,
+    "aliases": [
+      "lin yi",
+      "linyi",
+      "临沂市",
+      "山东省"
+    ],
+    "administrativeCode": "371300000000"
+  },
+  {
+    "name": "德州",
+    "nameEn": "Dezhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 37.436492,
+    "longitude": 116.359244,
+    "aliases": [
+      "de zhou",
+      "dezhou",
+      "德州市",
+      "山东省"
+    ],
+    "administrativeCode": "371400000000"
+  },
+  {
+    "name": "聊城",
+    "nameEn": "Liaocheng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 36.455857,
+    "longitude": 115.985238,
+    "aliases": [
+      "liao cheng",
+      "liaocheng",
+      "聊城市",
+      "山东省"
+    ],
+    "administrativeCode": "371500000000"
+  },
+  {
+    "name": "滨州",
+    "nameEn": "Binzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 37.382687,
+    "longitude": 117.970731,
+    "aliases": [
+      "bin zhou",
+      "binzhou",
+      "滨州市",
+      "山东省"
+    ],
+    "administrativeCode": "371600000000"
+  },
+  {
+    "name": "菏泽",
+    "nameEn": "Heze",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "山东",
+    "provinceEn": "Shandong",
+    "latitude": 35.234309,
+    "longitude": 115.479646,
+    "aliases": [
+      "he ze",
+      "heze",
+      "菏泽市",
+      "山东省"
+    ],
+    "administrativeCode": "371700000000"
+  },
+  {
+    "name": "郑州",
+    "nameEn": "Zhengzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 34.746303,
+    "longitude": 113.625351,
+    "aliases": [
+      "zheng zhou",
+      "zhengzhou",
+      "郑州市",
+      "河南省"
+    ],
+    "administrativeCode": "410100000000"
+  },
+  {
+    "name": "开封",
+    "nameEn": "Kaifeng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 34.798083,
+    "longitude": 114.314278,
+    "aliases": [
+      "kai feng",
+      "kaifeng",
+      "开封市",
+      "河南省"
+    ],
+    "administrativeCode": "410200000000"
+  },
+  {
+    "name": "洛阳",
+    "nameEn": "Luoyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 34.619702,
+    "longitude": 112.453895,
+    "aliases": [
+      "luo yang",
+      "luoyang",
+      "洛阳市",
+      "河南省"
+    ],
+    "administrativeCode": "410300000000"
+  },
+  {
+    "name": "平顶山",
+    "nameEn": "Pingdingshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 33.766554,
+    "longitude": 113.192595,
+    "aliases": [
+      "ping ding shan",
+      "pingdingshan",
+      "平顶山市",
+      "河南省"
+    ],
+    "administrativeCode": "410400000000"
+  },
+  {
+    "name": "安阳",
+    "nameEn": "Anyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 36.098779,
+    "longitude": 114.39248,
+    "aliases": [
+      "an yang",
+      "anyang",
+      "安阳市",
+      "河南省"
+    ],
+    "administrativeCode": "410500000000"
+  },
+  {
+    "name": "鹤壁",
+    "nameEn": "Hebi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 35.748329,
+    "longitude": 114.297305,
+    "aliases": [
+      "he bi",
+      "hebi",
+      "鹤壁市",
+      "河南省"
+    ],
+    "administrativeCode": "410600000000"
+  },
+  {
+    "name": "新乡",
+    "nameEn": "Xinxiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 35.303589,
+    "longitude": 113.92679,
+    "aliases": [
+      "xin xiang",
+      "xinxiang",
+      "新乡市",
+      "河南省"
+    ],
+    "administrativeCode": "410700000000"
+  },
+  {
+    "name": "焦作",
+    "nameEn": "Jiaozuo",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 35.215726,
+    "longitude": 113.241902,
+    "aliases": [
+      "jiao zuo",
+      "jiaozuo",
+      "焦作市",
+      "河南省"
+    ],
+    "administrativeCode": "410800000000"
+  },
+  {
+    "name": "濮阳",
+    "nameEn": "Puyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 35.762731,
+    "longitude": 115.029246,
+    "aliases": [
+      "pu yang",
+      "puyang",
+      "濮阳市",
+      "河南省"
+    ],
+    "administrativeCode": "410900000000"
+  },
+  {
+    "name": "许昌",
+    "nameEn": "Xuchang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 34.03732,
+    "longitude": 113.852004,
+    "aliases": [
+      "xu chang",
+      "xuchang",
+      "许昌市",
+      "河南省"
+    ],
+    "administrativeCode": "411000000000"
+  },
+  {
+    "name": "漯河",
+    "nameEn": "Luohe",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 33.58038,
+    "longitude": 114.0166,
+    "aliases": [
+      "luo he",
+      "luohe",
+      "漯河市",
+      "河南省"
+    ],
+    "administrativeCode": "411100000000"
+  },
+  {
+    "name": "三门峡",
+    "nameEn": "Sanmenxia",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 34.773196,
+    "longitude": 111.200482,
+    "aliases": [
+      "san men xia",
+      "sanmenxia",
+      "三门峡市",
+      "河南省"
+    ],
+    "administrativeCode": "411200000000"
+  },
+  {
+    "name": "南阳",
+    "nameEn": "Nanyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 33.016102,
+    "longitude": 112.584753,
+    "aliases": [
+      "nan yang",
+      "nanyang",
+      "南阳市",
+      "河南省"
+    ],
+    "administrativeCode": "411300000000"
+  },
+  {
+    "name": "商丘",
+    "nameEn": "Shangqiu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 34.415165,
+    "longitude": 115.656358,
+    "aliases": [
+      "shang qiu",
+      "shangqiu",
+      "商丘市",
+      "河南省"
+    ],
+    "administrativeCode": "411400000000"
+  },
+  {
+    "name": "信阳",
+    "nameEn": "Xinyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 32.148624,
+    "longitude": 114.091058,
+    "aliases": [
+      "xin yang",
+      "xinyang",
+      "信阳市",
+      "河南省"
+    ],
+    "administrativeCode": "411500000000"
+  },
+  {
+    "name": "周口",
+    "nameEn": "Zhoukou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 33.634652,
+    "longitude": 114.701222,
+    "aliases": [
+      "zhou kou",
+      "zhoukou",
+      "周口市",
+      "河南省"
+    ],
+    "administrativeCode": "411600000000"
+  },
+  {
+    "name": "驻马店",
+    "nameEn": "Zhumadian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 33.014038,
+    "longitude": 114.021988,
+    "aliases": [
+      "zhu ma dian",
+      "zhumadian",
+      "驻马店市",
+      "河南省"
+    ],
+    "administrativeCode": "411700000000"
+  },
+  {
+    "name": "济源",
+    "nameEn": "Jiyuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "河南",
+    "provinceEn": "Henan",
+    "latitude": 35.069057,
+    "longitude": 112.602347,
+    "aliases": [
+      "ji yuan",
+      "jiyuan",
+      "济源市",
+      "河南省"
+    ],
+    "administrativeCode": "419001000000"
+  },
+  {
+    "name": "武汉",
+    "nameEn": "Wuhan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.593354,
+    "longitude": 114.304569,
+    "aliases": [
+      "wu han",
+      "wuhan",
+      "武汉市",
+      "湖北省"
+    ],
+    "administrativeCode": "420100000000"
+  },
+  {
+    "name": "黄石",
+    "nameEn": "Huangshi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.201082,
+    "longitude": 115.038999,
+    "aliases": [
+      "huang shi",
+      "huangshi",
+      "黄石市",
+      "湖北省"
+    ],
+    "administrativeCode": "420200000000"
+  },
+  {
+    "name": "十堰",
+    "nameEn": "Shiyan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 32.629057,
+    "longitude": 110.798921,
+    "aliases": [
+      "shi yan",
+      "shiyan",
+      "十堰市",
+      "湖北省"
+    ],
+    "administrativeCode": "420300000000"
+  },
+  {
+    "name": "宜昌",
+    "nameEn": "Yichang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.69217,
+    "longitude": 111.286962,
+    "aliases": [
+      "yi chang",
+      "yichang",
+      "宜昌市",
+      "湖北省"
+    ],
+    "administrativeCode": "420500000000"
+  },
+  {
+    "name": "襄阳",
+    "nameEn": "Xiangyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 32.010161,
+    "longitude": 112.121743,
+    "aliases": [
+      "xiang yang",
+      "xiangyang",
+      "襄阳市",
+      "湖北省"
+    ],
+    "administrativeCode": "420600000000"
+  },
+  {
+    "name": "鄂州",
+    "nameEn": "Ezhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.391461,
+    "longitude": 114.894909,
+    "aliases": [
+      "e zhou",
+      "ezhou",
+      "鄂州市",
+      "湖北省"
+    ],
+    "administrativeCode": "420700000000"
+  },
+  {
+    "name": "荆门",
+    "nameEn": "Jingmen",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 31.035445,
+    "longitude": 112.199009,
+    "aliases": [
+      "jing men",
+      "jingmen",
+      "荆门市",
+      "湖北省"
+    ],
+    "administrativeCode": "420800000000"
+  },
+  {
+    "name": "孝感",
+    "nameEn": "Xiaogan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.918311,
+    "longitude": 113.956962,
+    "aliases": [
+      "xiao gan",
+      "xiaogan",
+      "孝感市",
+      "湖北省"
+    ],
+    "administrativeCode": "420900000000"
+  },
+  {
+    "name": "荆州",
+    "nameEn": "Jingzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.336282,
+    "longitude": 112.24143,
+    "aliases": [
+      "jing zhou",
+      "jingzhou",
+      "荆州市",
+      "湖北省"
+    ],
+    "administrativeCode": "421000000000"
+  },
+  {
+    "name": "黄冈",
+    "nameEn": "Huanggang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.453722,
+    "longitude": 114.872425,
+    "aliases": [
+      "huang gang",
+      "huanggang",
+      "黄冈市",
+      "湖北省"
+    ],
+    "administrativeCode": "421100000000"
+  },
+  {
+    "name": "咸宁",
+    "nameEn": "Xianning",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 29.84135,
+    "longitude": 114.322601,
+    "aliases": [
+      "xian ning",
+      "xianning",
+      "咸宁市",
+      "湖北省"
+    ],
+    "administrativeCode": "421200000000"
+  },
+  {
+    "name": "随州",
+    "nameEn": "Suizhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 31.690275,
+    "longitude": 113.382324,
+    "aliases": [
+      "sui zhou",
+      "suizhou",
+      "随州市",
+      "湖北省"
+    ],
+    "administrativeCode": "421300000000"
+  },
+  {
+    "name": "恩施",
+    "nameEn": "Enshi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.272104,
+    "longitude": 109.488076,
+    "aliases": [
+      "en shi",
+      "enshi",
+      "恩施土家族苗族自治州",
+      "湖北省"
+    ],
+    "administrativeCode": "422800000000"
+  },
+  {
+    "name": "仙桃",
+    "nameEn": "Xiantao",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.328407,
+    "longitude": 113.442973,
+    "aliases": [
+      "xian tao",
+      "xiantao",
+      "仙桃市",
+      "湖北省"
+    ],
+    "administrativeCode": "429004000000"
+  },
+  {
+    "name": "潜江",
+    "nameEn": "Qianjiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.401954,
+    "longitude": 112.900279,
+    "aliases": [
+      "qian jiang",
+      "qianjiang",
+      "潜江市",
+      "湖北省"
+    ],
+    "administrativeCode": "429005000000"
+  },
+  {
+    "name": "天门",
+    "nameEn": "Tianmen",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 30.663706,
+    "longitude": 113.166545,
+    "aliases": [
+      "tian men",
+      "tianmen",
+      "天门市",
+      "湖北省"
+    ],
+    "administrativeCode": "429006000000"
+  },
+  {
+    "name": "神农架",
+    "nameEn": "Shennongjia",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖北",
+    "provinceEn": "Hubei",
+    "latitude": 31.745103,
+    "longitude": 110.675879,
+    "aliases": [
+      "shen nong jia",
+      "shennongjia",
+      "神农架林区",
+      "湖北省"
+    ],
+    "administrativeCode": "429021000000"
+  },
+  {
+    "name": "长沙",
+    "nameEn": "Changsha",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 28.228304,
+    "longitude": 112.938882,
+    "aliases": [
+      "chang sha",
+      "changsha",
+      "长沙市",
+      "湖南省"
+    ],
+    "administrativeCode": "430100000000"
+  },
+  {
+    "name": "株洲",
+    "nameEn": "Zhuzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 27.828862,
+    "longitude": 113.132783,
+    "aliases": [
+      "zhu zhou",
+      "zhuzhou",
+      "株洲市",
+      "湖南省"
+    ],
+    "administrativeCode": "430200000000"
+  },
+  {
+    "name": "湘潭",
+    "nameEn": "Xiangtan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 27.83136,
+    "longitude": 112.945439,
+    "aliases": [
+      "xiang tan",
+      "xiangtan",
+      "湘潭市",
+      "湖南省"
+    ],
+    "administrativeCode": "430300000000"
+  },
+  {
+    "name": "衡阳",
+    "nameEn": "Hengyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 26.894216,
+    "longitude": 112.572016,
+    "aliases": [
+      "heng yang",
+      "hengyang",
+      "衡阳市",
+      "湖南省"
+    ],
+    "administrativeCode": "430400000000"
+  },
+  {
+    "name": "邵阳",
+    "nameEn": "Shaoyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 27.239528,
+    "longitude": 111.467855,
+    "aliases": [
+      "shao yang",
+      "shaoyang",
+      "邵阳市",
+      "湖南省"
+    ],
+    "administrativeCode": "430500000000"
+  },
+  {
+    "name": "岳阳",
+    "nameEn": "Yueyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 29.35648,
+    "longitude": 113.128922,
+    "aliases": [
+      "yue yang",
+      "yueyang",
+      "岳阳市",
+      "湖南省"
+    ],
+    "administrativeCode": "430600000000"
+  },
+  {
+    "name": "常德",
+    "nameEn": "Changde",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 29.031446,
+    "longitude": 111.69905,
+    "aliases": [
+      "chang de",
+      "changde",
+      "常德市",
+      "湖南省"
+    ],
+    "administrativeCode": "430700000000"
+  },
+  {
+    "name": "张家界",
+    "nameEn": "Zhangjiajie",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 29.117343,
+    "longitude": 110.478887,
+    "aliases": [
+      "zhang jia jie",
+      "zhangjiajie",
+      "张家界市",
+      "湖南省"
+    ],
+    "administrativeCode": "430800000000"
+  },
+  {
+    "name": "益阳",
+    "nameEn": "Yiyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 28.554853,
+    "longitude": 112.355994,
+    "aliases": [
+      "yi yang",
+      "yiyang",
+      "益阳市",
+      "湖南省"
+    ],
+    "administrativeCode": "430900000000"
+  },
+  {
+    "name": "郴州",
+    "nameEn": "Chenzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 25.770117,
+    "longitude": 113.015517,
+    "aliases": [
+      "chen zhou",
+      "chenzhou",
+      "郴州市",
+      "湖南省"
+    ],
+    "administrativeCode": "431000000000"
+  },
+  {
+    "name": "永州",
+    "nameEn": "Yongzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 26.419861,
+    "longitude": 111.613482,
+    "aliases": [
+      "yong zhou",
+      "yongzhou",
+      "永州市",
+      "湖南省"
+    ],
+    "administrativeCode": "431100000000"
+  },
+  {
+    "name": "怀化",
+    "nameEn": "Huaihua",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 27.569813,
+    "longitude": 110.001598,
+    "aliases": [
+      "huai hua",
+      "huaihua",
+      "怀化市",
+      "湖南省"
+    ],
+    "administrativeCode": "431200000000"
+  },
+  {
+    "name": "娄底",
+    "nameEn": "Loudi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 27.699838,
+    "longitude": 111.994468,
+    "aliases": [
+      "lou di",
+      "loudi",
+      "娄底市",
+      "湖南省"
+    ],
+    "administrativeCode": "431300000000"
+  },
+  {
+    "name": "湘西",
+    "nameEn": "Xiangxi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "湖南",
+    "provinceEn": "Hunan",
+    "latitude": 28.215983,
+    "longitude": 109.673345,
+    "aliases": [
+      "xiang xi",
+      "xiangxi",
+      "湘西土家族苗族自治州",
+      "湖南省"
+    ],
+    "administrativeCode": "433100000000"
+  },
+  {
+    "name": "广州",
+    "nameEn": "Guangzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.130061,
+    "longitude": 113.264499,
+    "aliases": [
+      "guang zhou",
+      "guangzhou",
+      "广州市",
+      "广东省"
+    ],
+    "administrativeCode": "440100000000"
+  },
+  {
+    "name": "韶关",
+    "nameEn": "Shaoguan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 24.810977,
+    "longitude": 113.597324,
+    "aliases": [
+      "shao guan",
+      "shaoguan",
+      "韶关市",
+      "广东省"
+    ],
+    "administrativeCode": "440200000000"
+  },
+  {
+    "name": "深圳",
+    "nameEn": "Shenzhen",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 22.543527,
+    "longitude": 114.057939,
+    "aliases": [
+      "shen zhen",
+      "shenzhen",
+      "深圳市",
+      "广东省"
+    ],
+    "administrativeCode": "440300000000"
+  },
+  {
+    "name": "珠海",
+    "nameEn": "Zhuhai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 22.271644,
+    "longitude": 113.576892,
+    "aliases": [
+      "zhu hai",
+      "zhuhai",
+      "珠海市",
+      "广东省"
+    ],
+    "administrativeCode": "440400000000"
+  },
+  {
+    "name": "汕头",
+    "nameEn": "Shantou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.354152,
+    "longitude": 116.681956,
+    "aliases": [
+      "shan tou",
+      "shantou",
+      "汕头市",
+      "广东省"
+    ],
+    "administrativeCode": "440500000000"
+  },
+  {
+    "name": "佛山",
+    "nameEn": "Foshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.021351,
+    "longitude": 113.121586,
+    "aliases": [
+      "fo shan",
+      "foshan",
+      "佛山市",
+      "广东省"
+    ],
+    "administrativeCode": "440600000000"
+  },
+  {
+    "name": "江门",
+    "nameEn": "Jiangmen",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 22.578948,
+    "longitude": 113.081548,
+    "aliases": [
+      "jiang men",
+      "jiangmen",
+      "江门市",
+      "广东省"
+    ],
+    "administrativeCode": "440700000000"
+  },
+  {
+    "name": "湛江",
+    "nameEn": "Zhanjiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 21.270108,
+    "longitude": 110.357538,
+    "aliases": [
+      "zhan jiang",
+      "zhanjiang",
+      "湛江市",
+      "广东省"
+    ],
+    "administrativeCode": "440800000000"
+  },
+  {
+    "name": "茂名",
+    "nameEn": "Maoming",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 21.662728,
+    "longitude": 110.925533,
+    "aliases": [
+      "mao ming",
+      "maoming",
+      "茂名市",
+      "广东省"
+    ],
+    "administrativeCode": "440900000000"
+  },
+  {
+    "name": "肇庆",
+    "nameEn": "Zhaoqing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.047747,
+    "longitude": 112.465245,
+    "aliases": [
+      "zhao qing",
+      "zhaoqing",
+      "肇庆市",
+      "广东省"
+    ],
+    "administrativeCode": "441200000000"
+  },
+  {
+    "name": "惠州",
+    "nameEn": "Huizhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.112368,
+    "longitude": 114.415587,
+    "aliases": [
+      "hui zhou",
+      "huizhou",
+      "惠州市",
+      "广东省"
+    ],
+    "administrativeCode": "441300000000"
+  },
+  {
+    "name": "梅州",
+    "nameEn": "Meizhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 24.288832,
+    "longitude": 116.122046,
+    "aliases": [
+      "mei zhou",
+      "meizhou",
+      "梅州市",
+      "广东省"
+    ],
+    "administrativeCode": "441400000000"
+  },
+  {
+    "name": "汕尾",
+    "nameEn": "Shanwei",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 22.787204,
+    "longitude": 115.375557,
+    "aliases": [
+      "shan wei",
+      "shanwei",
+      "汕尾市",
+      "广东省"
+    ],
+    "administrativeCode": "441500000000"
+  },
+  {
+    "name": "河源",
+    "nameEn": "Heyuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.744276,
+    "longitude": 114.700215,
+    "aliases": [
+      "he yuan",
+      "heyuan",
+      "河源市",
+      "广东省"
+    ],
+    "administrativeCode": "441600000000"
+  },
+  {
+    "name": "阳江",
+    "nameEn": "Yangjiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 21.856853,
+    "longitude": 111.98343,
+    "aliases": [
+      "yang jiang",
+      "yangjiang",
+      "阳江市",
+      "广东省"
+    ],
+    "administrativeCode": "441700000000"
+  },
+  {
+    "name": "清远",
+    "nameEn": "Qingyuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.682064,
+    "longitude": 113.056098,
+    "aliases": [
+      "qing yuan",
+      "qingyuan",
+      "清远市",
+      "广东省"
+    ],
+    "administrativeCode": "441800000000"
+  },
+  {
+    "name": "东莞",
+    "nameEn": "Dongguan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.021016,
+    "longitude": 113.751884,
+    "aliases": [
+      "dong guan",
+      "dongguan",
+      "东莞市",
+      "广东省"
+    ],
+    "administrativeCode": "441900000000"
+  },
+  {
+    "name": "中山",
+    "nameEn": "Zhongshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 22.517024,
+    "longitude": 113.392517,
+    "aliases": [
+      "zhong shan",
+      "zhongshan",
+      "中山市",
+      "广东省"
+    ],
+    "administrativeCode": "442000000000"
+  },
+  {
+    "name": "潮州",
+    "nameEn": "Chaozhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.657662,
+    "longitude": 116.621901,
+    "aliases": [
+      "chao zhou",
+      "chaozhou",
+      "潮州市",
+      "广东省"
+    ],
+    "administrativeCode": "445100000000"
+  },
+  {
+    "name": "揭阳",
+    "nameEn": "Jieyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 23.550968,
+    "longitude": 116.372732,
+    "aliases": [
+      "jie yang",
+      "jieyang",
+      "揭阳市",
+      "广东省"
+    ],
+    "administrativeCode": "445200000000"
+  },
+  {
+    "name": "云浮",
+    "nameEn": "Yunfu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广东",
+    "provinceEn": "Guangdong",
+    "latitude": 22.915163,
+    "longitude": 112.044524,
+    "aliases": [
+      "yun fu",
+      "yunfu",
+      "云浮市",
+      "广东省"
+    ],
+    "administrativeCode": "445300000000"
+  },
+  {
+    "name": "南宁",
+    "nameEn": "Nanning",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 22.8177,
+    "longitude": 108.366407,
+    "aliases": [
+      "nan ning",
+      "nanning",
+      "南宁市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "450100000000"
+  },
+  {
+    "name": "柳州",
+    "nameEn": "Liuzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 24.326442,
+    "longitude": 109.428071,
+    "aliases": [
+      "liu zhou",
+      "liuzhou",
+      "柳州市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "450200000000"
+  },
+  {
+    "name": "桂林",
+    "nameEn": "Guilin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 25.235615,
+    "longitude": 110.179752,
+    "aliases": [
+      "gui lin",
+      "guilin",
+      "桂林市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "450300000000"
+  },
+  {
+    "name": "梧州",
+    "nameEn": "Wuzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 23.476733,
+    "longitude": 111.279022,
+    "aliases": [
+      "wu zhou",
+      "wuzhou",
+      "梧州市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "450400000000"
+  },
+  {
+    "name": "北海",
+    "nameEn": "Beihai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 21.481305,
+    "longitude": 109.120248,
+    "aliases": [
+      "bei hai",
+      "beihai",
+      "北海市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "450500000000"
+  },
+  {
+    "name": "防城港",
+    "nameEn": "Fangchenggang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 21.686732,
+    "longitude": 108.35467,
+    "aliases": [
+      "fang cheng gang",
+      "fangchenggang",
+      "防城港市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "450600000000"
+  },
+  {
+    "name": "钦州",
+    "nameEn": "Qinzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 21.980894,
+    "longitude": 108.654355,
+    "aliases": [
+      "qin zhou",
+      "qinzhou",
+      "钦州市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "450700000000"
+  },
+  {
+    "name": "贵港",
+    "nameEn": "Guigang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 23.11182,
+    "longitude": 109.598903,
+    "aliases": [
+      "gui gang",
+      "guigang",
+      "贵港市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "450800000000"
+  },
+  {
+    "name": "玉林",
+    "nameEn": "Yulin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 22.654001,
+    "longitude": 110.18097,
+    "aliases": [
+      "yu lin",
+      "yulin",
+      "玉林市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "450900000000"
+  },
+  {
+    "name": "百色",
+    "nameEn": "Baise",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 23.90307,
+    "longitude": 106.61869,
+    "aliases": [
+      "bai se",
+      "baise",
+      "百色市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "451000000000"
+  },
+  {
+    "name": "贺州",
+    "nameEn": "Hezhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 24.404182,
+    "longitude": 111.567216,
+    "aliases": [
+      "he zhou",
+      "hezhou",
+      "贺州市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "451100000000"
+  },
+  {
+    "name": "河池",
+    "nameEn": "Hechi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 24.48523,
+    "longitude": 108.63639,
+    "aliases": [
+      "he chi",
+      "hechi",
+      "河池市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "451200000000"
+  },
+  {
+    "name": "来宾",
+    "nameEn": "Laibin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 23.750105,
+    "longitude": 109.221243,
+    "aliases": [
+      "lai bin",
+      "laibin",
+      "来宾市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "451300000000"
+  },
+  {
+    "name": "崇左",
+    "nameEn": "Chongzuo",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "广西",
+    "provinceEn": "Guangxi",
+    "latitude": 22.377139,
+    "longitude": 107.364973,
+    "aliases": [
+      "chong zuo",
+      "chongzuo",
+      "崇左市",
+      "广西壮族自治区"
+    ],
+    "administrativeCode": "451400000000"
+  },
+  {
+    "name": "海口",
+    "nameEn": "Haikou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 20.046316,
+    "longitude": 110.200162,
+    "aliases": [
+      "hai kou",
+      "haikou",
+      "海口市",
+      "海南省"
+    ],
+    "administrativeCode": "460100000000"
+  },
+  {
+    "name": "三亚",
+    "nameEn": "Sanya",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 18.252865,
+    "longitude": 109.511709,
+    "aliases": [
+      "san ya",
+      "sanya",
+      "三亚市",
+      "海南省"
+    ],
+    "administrativeCode": "460200000000"
+  },
+  {
+    "name": "三沙",
+    "nameEn": "Sansha",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 16.831004,
+    "longitude": 112.338649,
+    "aliases": [
+      "san sha",
+      "sansha",
+      "三沙市",
+      "海南省"
+    ],
+    "administrativeCode": "460300000000"
+  },
+  {
+    "name": "儋州",
+    "nameEn": "Danzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.520948,
+    "longitude": 109.580812,
+    "aliases": [
+      "dan zhou",
+      "danzhou",
+      "儋州市",
+      "海南省"
+    ],
+    "administrativeCode": "460400000000"
+  },
+  {
+    "name": "五指山",
+    "nameEn": "Wuzhishan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 18.774827,
+    "longitude": 109.516784,
+    "aliases": [
+      "wu zhi shan",
+      "wuzhishan",
+      "五指山市",
+      "海南省"
+    ],
+    "administrativeCode": "469001000000"
+  },
+  {
+    "name": "琼海",
+    "nameEn": "Qionghai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.259112,
+    "longitude": 110.474524,
+    "aliases": [
+      "qiong hai",
+      "qionghai",
+      "琼海市",
+      "海南省"
+    ],
+    "administrativeCode": "469002000000"
+  },
+  {
+    "name": "文昌",
+    "nameEn": "Wenchang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.544234,
+    "longitude": 110.797473,
+    "aliases": [
+      "wen chang",
+      "wenchang",
+      "文昌市",
+      "海南省"
+    ],
+    "administrativeCode": "469005000000"
+  },
+  {
+    "name": "万宁",
+    "nameEn": "Wanning",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 18.793697,
+    "longitude": 110.392605,
+    "aliases": [
+      "wan ning",
+      "wanning",
+      "万宁市",
+      "海南省"
+    ],
+    "administrativeCode": "469006000000"
+  },
+  {
+    "name": "东方",
+    "nameEn": "Dongfang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.095187,
+    "longitude": 108.651829,
+    "aliases": [
+      "dong fang",
+      "dongfang",
+      "东方市",
+      "海南省"
+    ],
+    "administrativeCode": "469007000000"
+  },
+  {
+    "name": "定安",
+    "nameEn": "Dingan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.681215,
+    "longitude": 110.358001,
+    "aliases": [
+      "ding an",
+      "dingan",
+      "定安县",
+      "海南省"
+    ],
+    "administrativeCode": "469021000000"
+  },
+  {
+    "name": "屯昌",
+    "nameEn": "Tunchang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.351662,
+    "longitude": 110.101667,
+    "aliases": [
+      "tun chang",
+      "tunchang",
+      "屯昌县",
+      "海南省"
+    ],
+    "administrativeCode": "469022000000"
+  },
+  {
+    "name": "澄迈",
+    "nameEn": "Chengmai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.738885,
+    "longitude": 110.007497,
+    "aliases": [
+      "cheng mai",
+      "chengmai",
+      "澄迈县",
+      "海南省"
+    ],
+    "administrativeCode": "469023000000"
+  },
+  {
+    "name": "临高",
+    "nameEn": "Lingao",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.912025,
+    "longitude": 109.690508,
+    "aliases": [
+      "lin gao",
+      "lingao",
+      "临高县",
+      "海南省"
+    ],
+    "administrativeCode": "469024000000"
+  },
+  {
+    "name": "白沙",
+    "nameEn": "Baisha",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.221641,
+    "longitude": 109.4429,
+    "aliases": [
+      "bai sha",
+      "baisha",
+      "白沙黎族自治县",
+      "海南省"
+    ],
+    "administrativeCode": "469025000000"
+  },
+  {
+    "name": "昌江",
+    "nameEn": "Changjiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.298139,
+    "longitude": 109.055783,
+    "aliases": [
+      "chang jiang",
+      "changjiang",
+      "昌江黎族自治县",
+      "海南省"
+    ],
+    "administrativeCode": "469026000000"
+  },
+  {
+    "name": "乐东",
+    "nameEn": "Ledong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 18.750063,
+    "longitude": 109.173384,
+    "aliases": [
+      "le dong",
+      "ledong",
+      "乐东黎族自治县",
+      "海南省"
+    ],
+    "administrativeCode": "469027000000"
+  },
+  {
+    "name": "陵水",
+    "nameEn": "Lingshui",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 18.506045,
+    "longitude": 110.037553,
+    "aliases": [
+      "ling shui",
+      "lingshui",
+      "陵水黎族自治县",
+      "海南省"
+    ],
+    "administrativeCode": "469028000000"
+  },
+  {
+    "name": "保亭",
+    "nameEn": "Baoting",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 18.640339,
+    "longitude": 109.700279,
+    "aliases": [
+      "bao ting",
+      "baoting",
+      "保亭黎族苗族自治县",
+      "海南省"
+    ],
+    "administrativeCode": "469029000000"
+  },
+  {
+    "name": "琼中",
+    "nameEn": "Qiongzhong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "海南",
+    "provinceEn": "Hainan",
+    "latitude": 19.03327,
+    "longitude": 109.838423,
+    "aliases": [
+      "qiong zhong",
+      "qiongzhong",
+      "琼中黎族苗族自治县",
+      "海南省"
+    ],
+    "administrativeCode": "469030000000"
+  },
+  {
+    "name": "重庆城区",
+    "nameEn": "Chongqingchengqu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "重庆",
+    "provinceEn": "Chongqing",
+    "latitude": 29.533155,
+    "longitude": 106.504962,
+    "aliases": [
+      "chong qing cheng qu",
+      "chongqingchengqu",
+      "重庆城区",
+      "重庆市"
+    ],
+    "administrativeCode": "500100000000"
+  },
+  {
+    "name": "重庆郊县",
+    "nameEn": "Chongqingjiaoxian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "重庆",
+    "provinceEn": "Chongqing",
+    "latitude": 29.291965,
+    "longitude": 108.170255,
+    "aliases": [
+      "chong qing jiao xian",
+      "chongqingjiaoxian",
+      "重庆郊县",
+      "重庆市"
+    ],
+    "administrativeCode": "500200000000"
+  },
+  {
+    "name": "成都",
+    "nameEn": "Chengdu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 30.572961,
+    "longitude": 104.066301,
+    "aliases": [
+      "cheng du",
+      "chengdu",
+      "成都市",
+      "四川省"
+    ],
+    "administrativeCode": "510100000000"
+  },
+  {
+    "name": "自贡",
+    "nameEn": "Zigong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 29.33924,
+    "longitude": 104.779307,
+    "aliases": [
+      "zi gong",
+      "zigong",
+      "自贡市",
+      "四川省"
+    ],
+    "administrativeCode": "510300000000"
+  },
+  {
+    "name": "攀枝花",
+    "nameEn": "Panzhihua",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 26.558645,
+    "longitude": 101.729116,
+    "aliases": [
+      "pan zhi hua",
+      "panzhihua",
+      "攀枝花市",
+      "四川省"
+    ],
+    "administrativeCode": "510400000000"
+  },
+  {
+    "name": "泸州",
+    "nameEn": "Luzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 28.87098,
+    "longitude": 105.441866,
+    "aliases": [
+      "lu zhou",
+      "luzhou",
+      "泸州市",
+      "四川省"
+    ],
+    "administrativeCode": "510500000000"
+  },
+  {
+    "name": "德阳",
+    "nameEn": "Deyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 31.127449,
+    "longitude": 104.397795,
+    "aliases": [
+      "de yang",
+      "deyang",
+      "德阳市",
+      "四川省"
+    ],
+    "administrativeCode": "510600000000"
+  },
+  {
+    "name": "绵阳",
+    "nameEn": "Mianyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 31.467673,
+    "longitude": 104.679127,
+    "aliases": [
+      "mian yang",
+      "mianyang",
+      "绵阳市",
+      "四川省"
+    ],
+    "administrativeCode": "510700000000"
+  },
+  {
+    "name": "广元",
+    "nameEn": "Guangyuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 32.435774,
+    "longitude": 105.844004,
+    "aliases": [
+      "guang yuan",
+      "guangyuan",
+      "广元市",
+      "四川省"
+    ],
+    "administrativeCode": "510800000000"
+  },
+  {
+    "name": "遂宁",
+    "nameEn": "Suining",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 30.53268,
+    "longitude": 105.592602,
+    "aliases": [
+      "sui ning",
+      "suining",
+      "遂宁市",
+      "四川省"
+    ],
+    "administrativeCode": "510900000000"
+  },
+  {
+    "name": "内江",
+    "nameEn": "Neijiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 29.58021,
+    "longitude": 105.057992,
+    "aliases": [
+      "nei jiang",
+      "neijiang",
+      "内江市",
+      "四川省"
+    ],
+    "administrativeCode": "511000000000"
+  },
+  {
+    "name": "乐山",
+    "nameEn": "Leshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 29.552275,
+    "longitude": 103.766085,
+    "aliases": [
+      "le shan",
+      "leshan",
+      "乐山市",
+      "四川省"
+    ],
+    "administrativeCode": "511100000000"
+  },
+  {
+    "name": "南充",
+    "nameEn": "Nanchong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 30.837235,
+    "longitude": 106.110565,
+    "aliases": [
+      "nan chong",
+      "nanchong",
+      "南充市",
+      "四川省"
+    ],
+    "administrativeCode": "511300000000"
+  },
+  {
+    "name": "眉山",
+    "nameEn": "Meishan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 30.077113,
+    "longitude": 103.848417,
+    "aliases": [
+      "mei shan",
+      "meishan",
+      "眉山市",
+      "四川省"
+    ],
+    "administrativeCode": "511400000000"
+  },
+  {
+    "name": "宜宾",
+    "nameEn": "Yibin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 28.752354,
+    "longitude": 104.642826,
+    "aliases": [
+      "yi bin",
+      "yibin",
+      "宜宾市",
+      "四川省"
+    ],
+    "administrativeCode": "511500000000"
+  },
+  {
+    "name": "广安",
+    "nameEn": "Guangan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 30.456354,
+    "longitude": 106.632647,
+    "aliases": [
+      "guang an",
+      "guangan",
+      "广安市",
+      "四川省"
+    ],
+    "administrativeCode": "511600000000"
+  },
+  {
+    "name": "达州",
+    "nameEn": "Dazhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 31.209278,
+    "longitude": 107.46778,
+    "aliases": [
+      "da zhou",
+      "dazhou",
+      "达州市",
+      "四川省"
+    ],
+    "administrativeCode": "511700000000"
+  },
+  {
+    "name": "雅安",
+    "nameEn": "Yaan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 30.009998,
+    "longitude": 103.041538,
+    "aliases": [
+      "ya an",
+      "yaan",
+      "雅安市",
+      "四川省"
+    ],
+    "administrativeCode": "511800000000"
+  },
+  {
+    "name": "巴中",
+    "nameEn": "Bazhong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 31.867853,
+    "longitude": 106.747548,
+    "aliases": [
+      "ba zhong",
+      "bazhong",
+      "巴中市",
+      "四川省"
+    ],
+    "administrativeCode": "511900000000"
+  },
+  {
+    "name": "资阳",
+    "nameEn": "Ziyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 30.129236,
+    "longitude": 104.627265,
+    "aliases": [
+      "zi yang",
+      "ziyang",
+      "资阳市",
+      "四川省"
+    ],
+    "administrativeCode": "512000000000"
+  },
+  {
+    "name": "阿坝",
+    "nameEn": "Aba",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 31.899427,
+    "longitude": 102.224504,
+    "aliases": [
+      "a ba",
+      "aba",
+      "阿坝藏族羌族自治州",
+      "四川省"
+    ],
+    "administrativeCode": "513200000000"
+  },
+  {
+    "name": "甘孜",
+    "nameEn": "Ganzi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 30.04952,
+    "longitude": 101.96231,
+    "aliases": [
+      "gan zi",
+      "ganzi",
+      "甘孜藏族自治州",
+      "四川省"
+    ],
+    "administrativeCode": "513300000000"
+  },
+  {
+    "name": "凉山",
+    "nameEn": "Liangshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "四川",
+    "provinceEn": "Sichuan",
+    "latitude": 27.881396,
+    "longitude": 102.267713,
+    "aliases": [
+      "liang shan",
+      "liangshan",
+      "凉山彝族自治州",
+      "四川省"
+    ],
+    "administrativeCode": "513400000000"
+  },
+  {
+    "name": "贵阳",
+    "nameEn": "Guiyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "贵州",
+    "provinceEn": "Guizhou",
+    "latitude": 26.646694,
+    "longitude": 106.628201,
+    "aliases": [
+      "gui yang",
+      "guiyang",
+      "贵阳市",
+      "贵州省"
+    ],
+    "administrativeCode": "520100000000"
+  },
+  {
+    "name": "六盘水",
+    "nameEn": "Liupanshui",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "贵州",
+    "provinceEn": "Guizhou",
+    "latitude": 26.592538,
+    "longitude": 104.830357,
+    "aliases": [
+      "liu pan shui",
+      "liupanshui",
+      "六盘水市",
+      "贵州省"
+    ],
+    "administrativeCode": "520200000000"
+  },
+  {
+    "name": "遵义",
+    "nameEn": "Zunyi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "贵州",
+    "provinceEn": "Guizhou",
+    "latitude": 27.721931,
+    "longitude": 107.031922,
+    "aliases": [
+      "zun yi",
+      "zunyi",
+      "遵义市",
+      "贵州省"
+    ],
+    "administrativeCode": "520300000000"
+  },
+  {
+    "name": "安顺",
+    "nameEn": "Anshun",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "贵州",
+    "provinceEn": "Guizhou",
+    "latitude": 26.253103,
+    "longitude": 105.9476,
+    "aliases": [
+      "an shun",
+      "anshun",
+      "安顺市",
+      "贵州省"
+    ],
+    "administrativeCode": "520400000000"
+  },
+  {
+    "name": "毕节",
+    "nameEn": "Bijie",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "贵州",
+    "provinceEn": "Guizhou",
+    "latitude": 27.283615,
+    "longitude": 105.291544,
+    "aliases": [
+      "bi jie",
+      "bijie",
+      "毕节市",
+      "贵州省"
+    ],
+    "administrativeCode": "520500000000"
+  },
+  {
+    "name": "铜仁",
+    "nameEn": "Tongren",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "贵州",
+    "provinceEn": "Guizhou",
+    "latitude": 27.731555,
+    "longitude": 109.189528,
+    "aliases": [
+      "tong ren",
+      "tongren",
+      "铜仁市",
+      "贵州省"
+    ],
+    "administrativeCode": "520600000000"
+  },
+  {
+    "name": "黔西南",
+    "nameEn": "Qianxinan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "贵州",
+    "provinceEn": "Guizhou",
+    "latitude": 25.087733,
+    "longitude": 104.906419,
+    "aliases": [
+      "qian xi nan",
+      "qianxinan",
+      "黔西南布依族苗族自治州",
+      "贵州省"
+    ],
+    "administrativeCode": "522300000000"
+  },
+  {
+    "name": "黔东南",
+    "nameEn": "Qiandongnan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "贵州",
+    "provinceEn": "Guizhou",
+    "latitude": 26.583759,
+    "longitude": 107.982838,
+    "aliases": [
+      "qian dong nan",
+      "qiandongnan",
+      "黔东南苗族侗族自治州",
+      "贵州省"
+    ],
+    "administrativeCode": "522600000000"
+  },
+  {
+    "name": "黔南",
+    "nameEn": "Qiannan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "贵州",
+    "provinceEn": "Guizhou",
+    "latitude": 26.253136,
+    "longitude": 107.522303,
+    "aliases": [
+      "qian nan",
+      "qiannan",
+      "黔南布依族苗族自治州",
+      "贵州省"
+    ],
+    "administrativeCode": "522700000000"
+  },
+  {
+    "name": "昆明",
+    "nameEn": "Kunming",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 24.88149,
+    "longitude": 102.833669,
+    "aliases": [
+      "kun ming",
+      "kunming",
+      "昆明市",
+      "云南省"
+    ],
+    "administrativeCode": "530100000000"
+  },
+  {
+    "name": "曲靖",
+    "nameEn": "Qujing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 25.490866,
+    "longitude": 103.796288,
+    "aliases": [
+      "qu jing",
+      "qujing",
+      "曲靖市",
+      "云南省"
+    ],
+    "administrativeCode": "530300000000"
+  },
+  {
+    "name": "玉溪",
+    "nameEn": "Yuxi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 24.346786,
+    "longitude": 102.526673,
+    "aliases": [
+      "yu xi",
+      "yuxi",
+      "玉溪市",
+      "云南省"
+    ],
+    "administrativeCode": "530400000000"
+  },
+  {
+    "name": "保山",
+    "nameEn": "Baoshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 25.112018,
+    "longitude": 99.161489,
+    "aliases": [
+      "bao shan",
+      "baoshan",
+      "保山市",
+      "云南省"
+    ],
+    "administrativeCode": "530500000000"
+  },
+  {
+    "name": "昭通",
+    "nameEn": "Zhaotong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 27.338185,
+    "longitude": 103.717078,
+    "aliases": [
+      "zhao tong",
+      "zhaotong",
+      "昭通市",
+      "云南省"
+    ],
+    "administrativeCode": "530600000000"
+  },
+  {
+    "name": "丽江",
+    "nameEn": "Lijiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 26.855165,
+    "longitude": 100.225936,
+    "aliases": [
+      "li jiang",
+      "lijiang",
+      "丽江市",
+      "云南省"
+    ],
+    "administrativeCode": "530700000000"
+  },
+  {
+    "name": "普洱",
+    "nameEn": "Puer",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 22.825229,
+    "longitude": 100.966011,
+    "aliases": [
+      "pu er",
+      "puer",
+      "普洱市",
+      "云南省"
+    ],
+    "administrativeCode": "530800000000"
+  },
+  {
+    "name": "临沧",
+    "nameEn": "Lincang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 23.884175,
+    "longitude": 100.088837,
+    "aliases": [
+      "lin cang",
+      "lincang",
+      "临沧市",
+      "云南省"
+    ],
+    "administrativeCode": "530900000000"
+  },
+  {
+    "name": "楚雄",
+    "nameEn": "Chuxiong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 25.045678,
+    "longitude": 101.528304,
+    "aliases": [
+      "chu xiong",
+      "chuxiong",
+      "楚雄彝族自治州",
+      "云南省"
+    ],
+    "administrativeCode": "532300000000"
+  },
+  {
+    "name": "红河",
+    "nameEn": "Honghe",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 23.363129,
+    "longitude": 103.374873,
+    "aliases": [
+      "hong he",
+      "honghe",
+      "红河哈尼族彝族自治州",
+      "云南省"
+    ],
+    "administrativeCode": "532500000000"
+  },
+  {
+    "name": "文山",
+    "nameEn": "Wenshan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 23.400983,
+    "longitude": 104.21567,
+    "aliases": [
+      "wen shan",
+      "wenshan",
+      "文山壮族苗族自治州",
+      "云南省"
+    ],
+    "administrativeCode": "532600000000"
+  },
+  {
+    "name": "西双版纳",
+    "nameEn": "Xishuangbanna",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 22.009037,
+    "longitude": 100.797002,
+    "aliases": [
+      "xi shuang ban na",
+      "xishuangbanna",
+      "西双版纳傣族自治州",
+      "云南省"
+    ],
+    "administrativeCode": "532800000000"
+  },
+  {
+    "name": "大理",
+    "nameEn": "Dali",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 25.606548,
+    "longitude": 100.267608,
+    "aliases": [
+      "da li",
+      "dali",
+      "大理白族自治州",
+      "云南省"
+    ],
+    "administrativeCode": "532900000000"
+  },
+  {
+    "name": "德宏",
+    "nameEn": "Dehong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 24.433146,
+    "longitude": 98.585621,
+    "aliases": [
+      "de hong",
+      "dehong",
+      "德宏傣族景颇族自治州",
+      "云南省"
+    ],
+    "administrativeCode": "533100000000"
+  },
+  {
+    "name": "怒江",
+    "nameEn": "Nujiang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 25.817555,
+    "longitude": 98.8566,
+    "aliases": [
+      "nu jiang",
+      "nujiang",
+      "怒江傈僳族自治州",
+      "云南省"
+    ],
+    "administrativeCode": "533300000000"
+  },
+  {
+    "name": "迪庆",
+    "nameEn": "Diqing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "云南",
+    "provinceEn": "Yunnan",
+    "latitude": 27.819149,
+    "longitude": 99.70211,
+    "aliases": [
+      "di qing",
+      "diqing",
+      "迪庆藏族自治州",
+      "云南省"
+    ],
+    "administrativeCode": "533400000000"
+  },
+  {
+    "name": "拉萨",
+    "nameEn": "Lasa",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "西藏",
+    "provinceEn": "Xizang",
+    "latitude": 29.653491,
+    "longitude": 91.171924,
+    "aliases": [
+      "la sa",
+      "lasa",
+      "拉萨市",
+      "西藏自治区"
+    ],
+    "administrativeCode": "540100000000"
+  },
+  {
+    "name": "日喀则",
+    "nameEn": "Rikaze",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "西藏",
+    "provinceEn": "Xizang",
+    "latitude": 29.266838,
+    "longitude": 88.880423,
+    "aliases": [
+      "ri ka ze",
+      "rikaze",
+      "日喀则市",
+      "西藏自治区"
+    ],
+    "administrativeCode": "540200000000"
+  },
+  {
+    "name": "昌都",
+    "nameEn": "Changdu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "西藏",
+    "provinceEn": "Xizang",
+    "latitude": 31.142879,
+    "longitude": 97.170425,
+    "aliases": [
+      "chang du",
+      "changdu",
+      "昌都市",
+      "西藏自治区"
+    ],
+    "administrativeCode": "540300000000"
+  },
+  {
+    "name": "林芝",
+    "nameEn": "Linzhi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "西藏",
+    "provinceEn": "Xizang",
+    "latitude": 29.64875,
+    "longitude": 94.361436,
+    "aliases": [
+      "lin zhi",
+      "linzhi",
+      "林芝市",
+      "西藏自治区"
+    ],
+    "administrativeCode": "540400000000"
+  },
+  {
+    "name": "山南",
+    "nameEn": "Shannan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "西藏",
+    "provinceEn": "Xizang",
+    "latitude": 29.237722,
+    "longitude": 91.771426,
+    "aliases": [
+      "shan nan",
+      "shannan",
+      "山南市",
+      "西藏自治区"
+    ],
+    "administrativeCode": "540500000000"
+  },
+  {
+    "name": "那曲",
+    "nameEn": "Naqu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "西藏",
+    "provinceEn": "Xizang",
+    "latitude": 31.477905,
+    "longitude": 92.05151,
+    "aliases": [
+      "na qu",
+      "naqu",
+      "那曲市",
+      "西藏自治区"
+    ],
+    "administrativeCode": "540600000000"
+  },
+  {
+    "name": "阿里",
+    "nameEn": "Ali",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "西藏",
+    "provinceEn": "Xizang",
+    "latitude": 32.500987,
+    "longitude": 80.105786,
+    "aliases": [
+      "a li",
+      "ali",
+      "阿里地区",
+      "西藏自治区"
+    ],
+    "administrativeCode": "542500000000"
+  },
+  {
+    "name": "西安",
+    "nameEn": "Xian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 34.343207,
+    "longitude": 108.939645,
+    "aliases": [
+      "xi an",
+      "xian",
+      "西安市",
+      "陕西省"
+    ],
+    "administrativeCode": "610100000000"
+  },
+  {
+    "name": "铜川",
+    "nameEn": "Tongchuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 34.897133,
+    "longitude": 108.945116,
+    "aliases": [
+      "tong chuan",
+      "tongchuan",
+      "铜川市",
+      "陕西省"
+    ],
+    "administrativeCode": "610200000000"
+  },
+  {
+    "name": "宝鸡",
+    "nameEn": "Baoji",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 34.362862,
+    "longitude": 107.237682,
+    "aliases": [
+      "bao ji",
+      "baoji",
+      "宝鸡市",
+      "陕西省"
+    ],
+    "administrativeCode": "610300000000"
+  },
+  {
+    "name": "咸阳",
+    "nameEn": "Xianyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 34.329896,
+    "longitude": 108.708837,
+    "aliases": [
+      "xian yang",
+      "xianyang",
+      "咸阳市",
+      "陕西省"
+    ],
+    "administrativeCode": "610400000000"
+  },
+  {
+    "name": "渭南",
+    "nameEn": "Weinan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 34.520632,
+    "longitude": 109.470962,
+    "aliases": [
+      "wei nan",
+      "weinan",
+      "渭南市",
+      "陕西省"
+    ],
+    "administrativeCode": "610500000000"
+  },
+  {
+    "name": "延安",
+    "nameEn": "Yanan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 36.650109,
+    "longitude": 109.49468,
+    "aliases": [
+      "yan an",
+      "yanan",
+      "延安市",
+      "陕西省"
+    ],
+    "administrativeCode": "610600000000"
+  },
+  {
+    "name": "汉中",
+    "nameEn": "Hanzhong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 33.066373,
+    "longitude": 107.02319,
+    "aliases": [
+      "han zhong",
+      "hanzhong",
+      "汉中市",
+      "陕西省"
+    ],
+    "administrativeCode": "610700000000"
+  },
+  {
+    "name": "榆林",
+    "nameEn": "Yulin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 38.28576,
+    "longitude": 109.734104,
+    "aliases": [
+      "yu lin",
+      "yulin",
+      "榆林市",
+      "陕西省"
+    ],
+    "administrativeCode": "610800000000"
+  },
+  {
+    "name": "安康",
+    "nameEn": "Ankang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 32.685435,
+    "longitude": 109.029017,
+    "aliases": [
+      "an kang",
+      "ankang",
+      "安康市",
+      "陕西省"
+    ],
+    "administrativeCode": "610900000000"
+  },
+  {
+    "name": "商洛",
+    "nameEn": "Shangluo",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "陕西",
+    "provinceEn": "Shanxi",
+    "latitude": 33.873358,
+    "longitude": 109.918646,
+    "aliases": [
+      "shang luo",
+      "shangluo",
+      "商洛市",
+      "陕西省"
+    ],
+    "administrativeCode": "611000000000"
+  },
+  {
+    "name": "兰州",
+    "nameEn": "Lanzhou",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 36.060798,
+    "longitude": 103.834228,
+    "aliases": [
+      "lan zhou",
+      "lanzhou",
+      "兰州市",
+      "甘肃省"
+    ],
+    "administrativeCode": "620100000000"
+  },
+  {
+    "name": "嘉峪关",
+    "nameEn": "Jiayuguan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 39.77325,
+    "longitude": 98.2882,
+    "aliases": [
+      "jia yu guan",
+      "jiayuguan",
+      "嘉峪关市",
+      "甘肃省"
+    ],
+    "administrativeCode": "620200000000"
+  },
+  {
+    "name": "金昌",
+    "nameEn": "Jinchang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 38.521468,
+    "longitude": 102.187972,
+    "aliases": [
+      "jin chang",
+      "jinchang",
+      "金昌市",
+      "甘肃省"
+    ],
+    "administrativeCode": "620300000000"
+  },
+  {
+    "name": "白银",
+    "nameEn": "Baiyin",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 36.545123,
+    "longitude": 104.138872,
+    "aliases": [
+      "bai yin",
+      "baiyin",
+      "白银市",
+      "甘肃省"
+    ],
+    "administrativeCode": "620400000000"
+  },
+  {
+    "name": "天水",
+    "nameEn": "Tianshui",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 34.581514,
+    "longitude": 105.724828,
+    "aliases": [
+      "tian shui",
+      "tianshui",
+      "天水市",
+      "甘肃省"
+    ],
+    "administrativeCode": "620500000000"
+  },
+  {
+    "name": "武威",
+    "nameEn": "Wuwei",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 37.92898,
+    "longitude": 102.637821,
+    "aliases": [
+      "wu wei",
+      "wuwei",
+      "武威市",
+      "甘肃省"
+    ],
+    "administrativeCode": "620600000000"
+  },
+  {
+    "name": "张掖",
+    "nameEn": "Zhangye",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 38.924766,
+    "longitude": 100.449858,
+    "aliases": [
+      "zhang ye",
+      "zhangye",
+      "张掖市",
+      "甘肃省"
+    ],
+    "administrativeCode": "620700000000"
+  },
+  {
+    "name": "平凉",
+    "nameEn": "Pingliang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 35.542417,
+    "longitude": 106.664913,
+    "aliases": [
+      "ping liang",
+      "pingliang",
+      "平凉市",
+      "甘肃省"
+    ],
+    "administrativeCode": "620800000000"
+  },
+  {
+    "name": "酒泉",
+    "nameEn": "Jiuquan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 39.733416,
+    "longitude": 98.49432,
+    "aliases": [
+      "jiu quan",
+      "jiuquan",
+      "酒泉市",
+      "甘肃省"
+    ],
+    "administrativeCode": "620900000000"
+  },
+  {
+    "name": "庆阳",
+    "nameEn": "Qingyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 35.709459,
+    "longitude": 107.643433,
+    "aliases": [
+      "qing yang",
+      "qingyang",
+      "庆阳市",
+      "甘肃省"
+    ],
+    "administrativeCode": "621000000000"
+  },
+  {
+    "name": "定西",
+    "nameEn": "Dingxi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 35.607947,
+    "longitude": 104.592342,
+    "aliases": [
+      "ding xi",
+      "dingxi",
+      "定西市",
+      "甘肃省"
+    ],
+    "administrativeCode": "621100000000"
+  },
+  {
+    "name": "陇南",
+    "nameEn": "Longnan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 33.370174,
+    "longitude": 104.960296,
+    "aliases": [
+      "long nan",
+      "longnan",
+      "陇南市",
+      "甘肃省"
+    ],
+    "administrativeCode": "621200000000"
+  },
+  {
+    "name": "临夏",
+    "nameEn": "Linxia",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 35.601792,
+    "longitude": 103.210386,
+    "aliases": [
+      "lin xia",
+      "linxia",
+      "临夏回族自治州",
+      "甘肃省"
+    ],
+    "administrativeCode": "622900000000"
+  },
+  {
+    "name": "甘南",
+    "nameEn": "Gannan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "甘肃",
+    "provinceEn": "Gansu",
+    "latitude": 34.983266,
+    "longitude": 102.911736,
+    "aliases": [
+      "gan nan",
+      "gannan",
+      "甘南藏族自治州",
+      "甘肃省"
+    ],
+    "administrativeCode": "623000000000"
+  },
+  {
+    "name": "西宁",
+    "nameEn": "Xining",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "青海",
+    "provinceEn": "Qinghai",
+    "latitude": 36.676027,
+    "longitude": 101.758249,
+    "aliases": [
+      "xi ning",
+      "xining",
+      "西宁市",
+      "青海省"
+    ],
+    "administrativeCode": "630100000000"
+  },
+  {
+    "name": "海东",
+    "nameEn": "Haidong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "青海",
+    "provinceEn": "Qinghai",
+    "latitude": 36.473448,
+    "longitude": 102.41064,
+    "aliases": [
+      "hai dong",
+      "haidong",
+      "海东市",
+      "青海省"
+    ],
+    "administrativeCode": "630200000000"
+  },
+  {
+    "name": "海北",
+    "nameEn": "Haibei",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "青海",
+    "provinceEn": "Qinghai",
+    "latitude": 36.954612,
+    "longitude": 100.900944,
+    "aliases": [
+      "hai bei",
+      "haibei",
+      "海北藏族自治州",
+      "青海省"
+    ],
+    "administrativeCode": "632200000000"
+  },
+  {
+    "name": "黄南",
+    "nameEn": "Huangnan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "青海",
+    "provinceEn": "Qinghai",
+    "latitude": 35.519317,
+    "longitude": 102.015397,
+    "aliases": [
+      "huang nan",
+      "huangnan",
+      "黄南藏族自治州",
+      "青海省"
+    ],
+    "administrativeCode": "632300000000"
+  },
+  {
+    "name": "海南",
+    "nameEn": "Hainan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "青海",
+    "provinceEn": "Qinghai",
+    "latitude": 36.296399,
+    "longitude": 100.622647,
+    "aliases": [
+      "hai nan",
+      "hainan",
+      "海南藏族自治州",
+      "青海省"
+    ],
+    "administrativeCode": "632500000000"
+  },
+  {
+    "name": "果洛",
+    "nameEn": "Guoluo",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "青海",
+    "provinceEn": "Qinghai",
+    "latitude": 34.472179,
+    "longitude": 100.245161,
+    "aliases": [
+      "guo luo",
+      "guoluo",
+      "果洛藏族自治州",
+      "青海省"
+    ],
+    "administrativeCode": "632600000000"
+  },
+  {
+    "name": "玉树",
+    "nameEn": "Yushu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "青海",
+    "provinceEn": "Qinghai",
+    "latitude": 33.006308,
+    "longitude": 97.006292,
+    "aliases": [
+      "yu shu",
+      "yushu",
+      "玉树藏族自治州",
+      "青海省"
+    ],
+    "administrativeCode": "632700000000"
+  },
+  {
+    "name": "海西",
+    "nameEn": "Haixi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "青海",
+    "provinceEn": "Qinghai",
+    "latitude": 37.348114,
+    "longitude": 97.33197,
+    "aliases": [
+      "hai xi",
+      "haixi",
+      "海西蒙古族藏族自治州",
+      "青海省"
+    ],
+    "administrativeCode": "632800000000"
+  },
+  {
+    "name": "银川",
+    "nameEn": "Yinchuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "宁夏",
+    "provinceEn": "Ningxia",
+    "latitude": 38.487783,
+    "longitude": 106.230977,
+    "aliases": [
+      "yin chuan",
+      "yinchuan",
+      "银川市",
+      "宁夏回族自治区"
+    ],
+    "administrativeCode": "640100000000"
+  },
+  {
+    "name": "石嘴山",
+    "nameEn": "Shizuishan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "宁夏",
+    "provinceEn": "Ningxia",
+    "latitude": 38.984632,
+    "longitude": 106.382792,
+    "aliases": [
+      "shi zui shan",
+      "shizuishan",
+      "石嘴山市",
+      "宁夏回族自治区"
+    ],
+    "administrativeCode": "640200000000"
+  },
+  {
+    "name": "吴忠",
+    "nameEn": "Wuzhong",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "宁夏",
+    "provinceEn": "Ningxia",
+    "latitude": 37.997755,
+    "longitude": 106.198613,
+    "aliases": [
+      "wu zhong",
+      "wuzhong",
+      "吴忠市",
+      "宁夏回族自治区"
+    ],
+    "administrativeCode": "640300000000"
+  },
+  {
+    "name": "固原",
+    "nameEn": "Guyuan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "宁夏",
+    "provinceEn": "Ningxia",
+    "latitude": 36.01628,
+    "longitude": 106.24267,
+    "aliases": [
+      "gu yuan",
+      "guyuan",
+      "固原市",
+      "宁夏回族自治区"
+    ],
+    "administrativeCode": "640400000000"
+  },
+  {
+    "name": "中卫",
+    "nameEn": "Zhongwei",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "宁夏",
+    "provinceEn": "Ningxia",
+    "latitude": 37.500185,
+    "longitude": 105.19677,
+    "aliases": [
+      "zhong wei",
+      "zhongwei",
+      "中卫市",
+      "宁夏回族自治区"
+    ],
+    "administrativeCode": "640500000000"
+  },
+  {
+    "name": "乌鲁木齐",
+    "nameEn": "Wulumuqi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 43.825377,
+    "longitude": 87.616824,
+    "aliases": [
+      "wu lu mu qi",
+      "wulumuqi",
+      "乌鲁木齐市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "650100000000"
+  },
+  {
+    "name": "克拉玛依",
+    "nameEn": "Kelamayi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 45.577712,
+    "longitude": 84.889239,
+    "aliases": [
+      "ke la ma yi",
+      "kelamayi",
+      "克拉玛依市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "650200000000"
+  },
+  {
+    "name": "吐鲁番",
+    "nameEn": "Tulufan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 42.972736,
+    "longitude": 89.250261,
+    "aliases": [
+      "tu lu fan",
+      "tulufan",
+      "吐鲁番市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "650400000000"
+  },
+  {
+    "name": "哈密",
+    "nameEn": "Hami",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 42.819346,
+    "longitude": 93.515053,
+    "aliases": [
+      "ha mi",
+      "hami",
+      "哈密市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "650500000000"
+  },
+  {
+    "name": "昌吉",
+    "nameEn": "Changji",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 44.011044,
+    "longitude": 87.308995,
+    "aliases": [
+      "chang ji",
+      "changji",
+      "昌吉回族自治州",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "652300000000"
+  },
+  {
+    "name": "博尔塔拉",
+    "nameEn": "Boertala",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 44.906039,
+    "longitude": 82.066363,
+    "aliases": [
+      "bo er ta la",
+      "boertala",
+      "博尔塔拉蒙古自治州",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "652700000000"
+  },
+  {
+    "name": "巴音郭楞",
+    "nameEn": "Bayinguoleng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 41.764115,
+    "longitude": 86.145298,
+    "aliases": [
+      "ba yin guo leng",
+      "bayinguoleng",
+      "巴音郭楞蒙古自治州",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "652800000000"
+  },
+  {
+    "name": "阿克苏",
+    "nameEn": "Akesu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 41.170712,
+    "longitude": 80.265068,
+    "aliases": [
+      "a ke su",
+      "akesu",
+      "阿克苏地区",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "652900000000"
+  },
+  {
+    "name": "克孜勒苏",
+    "nameEn": "Kezilesu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 39.716236,
+    "longitude": 76.168157,
+    "aliases": [
+      "ke zi le su",
+      "kezilesu",
+      "克孜勒苏柯尔克孜自治州",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "653000000000"
+  },
+  {
+    "name": "喀什",
+    "nameEn": "Kashi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 39.470215,
+    "longitude": 75.990618,
+    "aliases": [
+      "ka shi",
+      "kashi",
+      "喀什地区",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "653100000000"
+  },
+  {
+    "name": "和田",
+    "nameEn": "Hetian",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 37.114406,
+    "longitude": 79.921646,
+    "aliases": [
+      "he tian",
+      "hetian",
+      "和田地区",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "653200000000"
+  },
+  {
+    "name": "伊犁",
+    "nameEn": "Yili",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 43.917106,
+    "longitude": 81.323691,
+    "aliases": [
+      "yi li",
+      "yili",
+      "伊犁哈萨克自治州",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "654000000000"
+  },
+  {
+    "name": "塔城",
+    "nameEn": "Tacheng",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 46.745364,
+    "longitude": 82.980316,
+    "aliases": [
+      "ta cheng",
+      "tacheng",
+      "塔城地区",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "654200000000"
+  },
+  {
+    "name": "阿勒泰",
+    "nameEn": "Aletai",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 47.844924,
+    "longitude": 88.141253,
+    "aliases": [
+      "a le tai",
+      "aletai",
+      "阿勒泰地区",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "654300000000"
+  },
+  {
+    "name": "石河子",
+    "nameEn": "Shihezi",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 44.305368,
+    "longitude": 86.080397,
+    "aliases": [
+      "shi he zi",
+      "shihezi",
+      "石河子市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659001000000"
+  },
+  {
+    "name": "阿拉尔",
+    "nameEn": "Alaer",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 40.547205,
+    "longitude": 81.280532,
+    "aliases": [
+      "a la er",
+      "alaer",
+      "阿拉尔市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659002000000"
+  },
+  {
+    "name": "图木舒克",
+    "nameEn": "Tumushuke",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 39.867776,
+    "longitude": 79.074965,
+    "aliases": [
+      "tu mu shu ke",
+      "tumushuke",
+      "图木舒克市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659003000000"
+  },
+  {
+    "name": "五家渠",
+    "nameEn": "Wujiaqu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 44.166489,
+    "longitude": 87.542852,
+    "aliases": [
+      "wu jia qu",
+      "wujiaqu",
+      "五家渠市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659004000000"
+  },
+  {
+    "name": "北屯",
+    "nameEn": "Beitun",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 47.326733,
+    "longitude": 87.834419,
+    "aliases": [
+      "bei tun",
+      "beitun",
+      "北屯市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659005000000"
+  },
+  {
+    "name": "铁门关",
+    "nameEn": "Tiemenguan",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 41.862997,
+    "longitude": 85.670291,
+    "aliases": [
+      "tie men guan",
+      "tiemenguan",
+      "铁门关市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659006000000"
+  },
+  {
+    "name": "双河",
+    "nameEn": "Shuanghe",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 44.840524,
+    "longitude": 82.353656,
+    "aliases": [
+      "shuang he",
+      "shuanghe",
+      "双河市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659007000000"
+  },
+  {
+    "name": "可克达拉",
+    "nameEn": "Kekedala",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 43.940381,
+    "longitude": 80.994153,
+    "aliases": [
+      "ke ke da la",
+      "kekedala",
+      "可克达拉市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659008000000"
+  },
+  {
+    "name": "昆玉",
+    "nameEn": "Kunyu",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 37.215372,
+    "longitude": 79.270193,
+    "aliases": [
+      "kun yu",
+      "kunyu",
+      "昆玉市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659009000000"
+  },
+  {
+    "name": "胡杨河",
+    "nameEn": "Huyanghe",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 44.692894,
+    "longitude": 84.827592,
+    "aliases": [
+      "hu yang he",
+      "huyanghe",
+      "胡杨河市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659010000000"
+  },
+  {
+    "name": "新星",
+    "nameEn": "Xinxing",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 42.797043,
+    "longitude": 93.74831,
+    "aliases": [
+      "xin xing",
+      "xinxing",
+      "新星市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659011000000"
+  },
+  {
+    "name": "白杨",
+    "nameEn": "Baiyang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "新疆",
+    "provinceEn": "Xinjiang",
+    "latitude": 46.727959,
+    "longitude": 82.896936,
+    "aliases": [
+      "bai yang",
+      "baiyang",
+      "白杨市",
+      "新疆维吾尔自治区"
+    ],
+    "administrativeCode": "659012000000"
+  },
+  {
+    "name": "香港",
+    "nameEn": "Xianggang",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "香港",
+    "provinceEn": "Xianggang",
+    "latitude": 22.278354,
+    "longitude": 114.170714,
+    "aliases": [
+      "xiang gang",
+      "xianggang",
+      "香港特别行政区",
+      "香港特别行政区"
+    ],
+    "administrativeCode": "810000000000"
+  },
+  {
+    "name": "澳门",
+    "nameEn": "Aomen",
+    "country": "中国",
+    "countryEn": "China",
+    "province": "澳门",
+    "provinceEn": "Aomen",
+    "latitude": 22.186927,
+    "longitude": 113.543076,
+    "aliases": [
+      "ao men",
+      "aomen",
+      "澳门特别行政区",
+      "澳门特别行政区"
+    ],
+    "administrativeCode": "820000000000"
+  }
+]
