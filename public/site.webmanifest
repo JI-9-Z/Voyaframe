@@ -3,12 +3,17 @@
   "short_name": "帧足记",
   "description": "在 3D 卫星地球上制作旅行路线动画",
   "lang": "zh-CN",
+  "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#061018",
-  "theme_color": "#071018",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "categories": ["travel", "photo", "video", "utilities"],
+  "background_color": "#071019",
+  "theme_color": "#0a141d",
   "icons": [
-    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "favicon.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "favicon.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }

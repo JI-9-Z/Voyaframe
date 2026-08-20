@@ -4,6 +4,8 @@ import { feature, mesh } from 'topojson-client'
 import type { GeometryCollection, Topology } from 'topojson-specification'
 import worldAtlas from 'world-atlas/countries-110m.json'
 import { useCanvasRenderer } from '../hooks/useCanvasRenderer'
+import { useMediaQuery } from '../hooks/useMediaQuery'
+import { Icon } from './Icon'
 import { formatTime } from '../lib/animationTimeline'
 import { locationName, t } from '../lib/i18n'
 import { interpolateCoordinate, routeCoordinatesForTransport, smoothstep, sphericalMean } from '../lib/globeGeometry'
@@ -13,11 +15,13 @@ import type { AnimationStatus, MapTheme, TimelineState, Trip } from '../types'
 
 interface Props { trip: Trip; timeline: TimelineState; status: AnimationStatus; canvasRef: RefObject<HTMLCanvasElement | null>; disabled?: boolean }
 interface GlobeView { center: SphericalCoordinate; zoom: number }
+interface FrameLayout { width: number; height: number; globeCenter: [number, number]; baseRadius: number }
 
-const WIDTH = 1280
-const HEIGHT = 720
-const GLOBE_CENTER: [number, number] = [760, 352]
-const BASE_RADIUS = 286
+const FRAME_LAYOUTS: Record<Trip['aspectRatio'], FrameLayout> = {
+  '16:9': { width: 1280, height: 720, globeCenter: [760, 352], baseRadius: 286 },
+  '1:1': { width: 1080, height: 1080, globeCenter: [540, 560], baseRadius: 390 },
+  '9:16': { width: 720, height: 1280, globeCenter: [360, 680], baseRadius: 300 },
+}
 const atlas = worldAtlas as unknown as Topology<{ countries: GeometryCollection; land: GeometryCollection }>
 const LAND = feature(atlas, atlas.objects.land)
 const BORDERS = mesh(atlas, atlas.objects.countries, (a, b) => a !== b)
@@ -46,7 +50,7 @@ function legView(trip: Trip, index: number, routes: SphericalCoordinate[][]): Gl
   const route = routes[index]
   const center = route?.length ? coordinateAtProgress(route, .5) : geoInterpolate(start, end)(.5) as SphericalCoordinate
   const distance = geoDistance(start, end)
-  return { center, zoom: Math.max(1.28, Math.min(1.66, 1.69 - distance * .23)) }
+  return { center, zoom: trip.legs[index]?.cameraZoom ?? Math.max(1.28, Math.min(1.66, 1.69 - distance * .23)) }
 }
 
 function viewFor(trip: Trip, timeline: TimelineState, routes: SphericalCoordinate[][]): GlobeView {
@@ -69,12 +73,12 @@ function viewFor(trip: Trip, timeline: TimelineState, routes: SphericalCoordinat
   return current
 }
 
-function drawBackground(context: CanvasRenderingContext2D, theme: MapTheme): void {
+function drawBackground(context: CanvasRenderingContext2D, theme: MapTheme, layout: FrameLayout): void {
   const colors = THEMES[theme]
-  const gradient = context.createRadialGradient(GLOBE_CENTER[0], GLOBE_CENTER[1], 40, GLOBE_CENTER[0], GLOBE_CENTER[1], 720)
-  gradient.addColorStop(0, colors.glow); gradient.addColorStop(1, colors.background); context.fillStyle = gradient; context.fillRect(0, 0, WIDTH, HEIGHT)
+  const gradient = context.createRadialGradient(layout.globeCenter[0], layout.globeCenter[1], 40, layout.globeCenter[0], layout.globeCenter[1], Math.max(layout.width, layout.height) * .75)
+  gradient.addColorStop(0, colors.glow); gradient.addColorStop(1, colors.background); context.fillStyle = gradient; context.fillRect(0, 0, layout.width, layout.height)
   context.save(); context.globalAlpha = theme === 'minimal' ? .16 : .34; context.fillStyle = theme === 'minimal' ? '#607d8b' : '#fff'
-  for (let index = 0; index < 90; index += 1) { const x = (index * 149) % WIDTH; const y = (index * 83) % HEIGHT; const radius = index % 7 === 0 ? 1.1 : .55; context.beginPath(); context.arc(x, y, radius, 0, Math.PI * 2); context.fill() }
+  for (let index = 0; index < 90; index += 1) { const x = (index * 149) % layout.width; const y = (index * 83) % layout.height; const radius = index % 7 === 0 ? 1.1 : .55; context.beginPath(); context.arc(x, y, radius, 0, Math.PI * 2); context.fill() }
   context.restore()
 }
 
@@ -95,9 +99,9 @@ function drawTexturedTriangle(context: CanvasRenderingContext2D, image: HTMLCanv
   context.save(); context.beginPath(); context.moveTo(dx0, dy0); context.lineTo(dx1, dy1); context.lineTo(dx2, dy2); context.closePath(); context.clip(); context.transform(a, b, c, d, e, f); context.drawImage(image, 0, 0); context.restore()
 }
 
-function drawSatelliteTexture(context: CanvasRenderingContext2D, projection: ReturnType<typeof geoOrthographic>, image: HTMLCanvasElement, viewCenter: SphericalCoordinate): void {
-  const longitudeStep = 18
-  const latitudeStep = 15
+function drawSatelliteTexture(context: CanvasRenderingContext2D, projection: ReturnType<typeof geoOrthographic>, image: HTMLCanvasElement, viewCenter: SphericalCoordinate, mobile: boolean): void {
+  const longitudeStep = mobile ? 24 : 18
+  const latitudeStep = mobile ? 20 : 15
   for (let latitudeTop = 90; latitudeTop > -90; latitudeTop -= latitudeStep) {
     const latitudeBottom = Math.max(-90, latitudeTop - latitudeStep)
     for (let longitudeLeft = -180; longitudeLeft < 180; longitudeLeft += longitudeStep) {
@@ -120,9 +124,10 @@ function drawSatelliteTexture(context: CanvasRenderingContext2D, projection: Ret
   }
 }
 
-function satelliteLayer(projection: ReturnType<typeof geoOrthographic>, image: HTMLImageElement, viewCenter: SphericalCoordinate, cache: SatelliteCache): HTMLCanvasElement {
-  const key = `${image.src}|${(Math.round(viewCenter[0] / .75) * .75).toFixed(2)}|${(Math.round(viewCenter[1] / .75) * .75).toFixed(2)}|${Math.round(projection.scale() / 2) * 2}`
-  if (!cache.canvas) { cache.canvas = document.createElement('canvas'); cache.canvas.width = WIDTH; cache.canvas.height = HEIGHT }
+function satelliteLayer(projection: ReturnType<typeof geoOrthographic>, image: HTMLImageElement, viewCenter: SphericalCoordinate, cache: SatelliteCache, mobile: boolean, layout: FrameLayout): HTMLCanvasElement {
+  const key = `${image.src}|${layout.width}x${layout.height}|${mobile ? 'm' : 'd'}|${(Math.round(viewCenter[0] / .75) * .75).toFixed(2)}|${(Math.round(viewCenter[1] / .75) * .75).toFixed(2)}|${Math.round(projection.scale() / 2) * 2}`
+  if (!cache.canvas) cache.canvas = document.createElement('canvas')
+  if (cache.canvas.width !== layout.width || cache.canvas.height !== layout.height) { cache.canvas.width = layout.width; cache.canvas.height = layout.height; cache.key = '' }
   if (!cache.source || cache.sourceImage !== image.src) {
     cache.source = document.createElement('canvas'); cache.source.width = 1440; cache.source.height = 720
     cache.source.getContext('2d')?.drawImage(image, 0, 0, cache.source.width, cache.source.height)
@@ -131,10 +136,10 @@ function satelliteLayer(projection: ReturnType<typeof geoOrthographic>, image: H
   if (cache.key !== key) {
     const layerContext = cache.canvas.getContext('2d')
     if (layerContext) {
-      layerContext.clearRect(0, 0, WIDTH, HEIGHT)
+      layerContext.clearRect(0, 0, layout.width, layout.height)
       const path = geoPath(projection, layerContext)
       layerContext.save(); layerContext.beginPath(); path({ type: 'Sphere' }); layerContext.clip()
-      drawSatelliteTexture(layerContext, projection, cache.source, viewCenter)
+      drawSatelliteTexture(layerContext, projection, cache.source, viewCenter, mobile)
       layerContext.restore()
       cache.key = key
     }
@@ -142,14 +147,14 @@ function satelliteLayer(projection: ReturnType<typeof geoOrthographic>, image: H
   return cache.canvas
 }
 
-function drawGlobe(context: CanvasRenderingContext2D, projection: ReturnType<typeof geoOrthographic>, theme: MapTheme, satelliteImage: HTMLImageElement | null, viewCenter: SphericalCoordinate, satelliteCache: SatelliteCache): void {
+function drawGlobe(context: CanvasRenderingContext2D, projection: ReturnType<typeof geoOrthographic>, theme: MapTheme, satelliteImage: HTMLImageElement | null, viewCenter: SphericalCoordinate, satelliteCache: SatelliteCache, mobile: boolean, layout: FrameLayout): void {
   const colors = THEMES[theme]; const path = geoPath(projection, context)
   context.save(); context.shadowBlur = 35; context.shadowColor = colors.atmosphere; context.beginPath(); path({ type: 'Sphere' }); context.fillStyle = colors.ocean; context.fill(); context.restore()
   context.save(); context.beginPath(); path({ type: 'Sphere' }); context.clip()
-  if (satelliteImage) context.drawImage(satelliteLayer(projection, satelliteImage, viewCenter, satelliteCache), 0, 0)
+  if (satelliteImage) context.drawImage(satelliteLayer(projection, satelliteImage, viewCenter, satelliteCache, mobile, layout), 0, 0)
   else { context.beginPath(); path(LAND); context.fillStyle = colors.land; context.fill() }
-  const oceanLight = context.createRadialGradient(GLOBE_CENTER[0] - 90, GLOBE_CENTER[1] - 110, 20, GLOBE_CENTER[0], GLOBE_CENTER[1], projection.scale())
-  oceanLight.addColorStop(0, theme === 'minimal' ? 'rgba(255,255,255,.3)' : 'rgba(110,195,235,.12)'); oceanLight.addColorStop(1, theme === 'minimal' ? 'rgba(20,35,45,.08)' : 'rgba(0,4,10,.32)'); context.fillStyle = oceanLight; context.fillRect(GLOBE_CENTER[0] - projection.scale(), GLOBE_CENTER[1] - projection.scale(), projection.scale() * 2, projection.scale() * 2)
+  const oceanLight = context.createRadialGradient(layout.globeCenter[0] - 90, layout.globeCenter[1] - 110, 20, layout.globeCenter[0], layout.globeCenter[1], projection.scale())
+  oceanLight.addColorStop(0, theme === 'minimal' ? 'rgba(255,255,255,.3)' : 'rgba(110,195,235,.12)'); oceanLight.addColorStop(1, theme === 'minimal' ? 'rgba(20,35,45,.08)' : 'rgba(0,4,10,.32)'); context.fillStyle = oceanLight; context.fillRect(layout.globeCenter[0] - projection.scale(), layout.globeCenter[1] - projection.scale(), projection.scale() * 2, projection.scale() * 2)
   context.beginPath(); path(GRATICULE); context.strokeStyle = colors.grid; context.lineWidth = .8; context.stroke()
   context.beginPath(); path(BORDERS); context.strokeStyle = satelliteImage ? 'rgba(220,241,252,.44)' : colors.border; context.globalAlpha = .8; context.lineWidth = .65; context.stroke(); context.restore()
   context.beginPath(); path({ type: 'Sphere' }); context.strokeStyle = theme === 'minimal' ? 'rgba(55,88,102,.36)' : 'rgba(125,211,252,.42)'; context.lineWidth = 1.5; context.stroke()
@@ -157,32 +162,37 @@ function drawGlobe(context: CanvasRenderingContext2D, projection: ReturnType<typ
 
 function drawMarker(context: CanvasRenderingContext2D, x: number, y: number, label: string, active: boolean, pulse: number, theme: MapTheme): void {
   const colors = THEMES[theme]; context.save()
-  if (pulse > 0) { context.beginPath(); context.arc(x, y, 11 + pulse * 27, 0, Math.PI * 2); context.strokeStyle = `rgba(96,165,250,${.58 * (1 - pulse)})`; context.lineWidth = 3; context.stroke() }
-  context.shadowBlur = active ? 22 : 11; context.shadowColor = active ? '#a78bfa' : '#22d3ee'; context.beginPath(); context.arc(x, y, active ? 7 : 5, 0, Math.PI * 2); context.fillStyle = active ? '#c4b5fd' : '#67e8f9'; context.fill()
+  if (pulse > 0) { context.beginPath(); context.arc(x, y, 11 + pulse * 27, 0, Math.PI * 2); context.strokeStyle = `rgba(216,180,119,${.58 * (1 - pulse)})`; context.lineWidth = 3; context.stroke() }
+  context.shadowBlur = active ? 18 : 10; context.shadowColor = active ? '#d8b477' : '#9bd7e1'; context.beginPath(); context.arc(x, y, active ? 7 : 5, 0, Math.PI * 2); context.fillStyle = active ? '#e5c58d' : '#9bd7e1'; context.fill()
   context.shadowBlur = 0; context.font = '600 16px Inter, system-ui, sans-serif'; context.textAlign = 'center'; context.fillStyle = colors.text; context.fillText(label, x, y - 16); context.restore()
 }
 
-function drawHud(context: CanvasRenderingContext2D, trip: Trip, timeline: TimelineState): void {
+function drawHud(context: CanvasRenderingContext2D, trip: Trip, timeline: TimelineState, layout: FrameLayout): void {
   const colors = THEMES[trip.theme]; const index = Math.min(timeline.segmentIndex, Math.max(0, trip.locations.length - 2)); const from = trip.locations[index]; const to = trip.locations[index + 1]; const transport = trip.legs[index]?.transport ?? 'plane'
-  context.save(); context.fillStyle = trip.theme === 'minimal' ? 'rgba(255,255,255,.84)' : 'rgba(5,14,24,.78)'; context.strokeStyle = trip.theme === 'minimal' ? 'rgba(50,70,80,.15)' : 'rgba(255,255,255,.13)'; context.lineWidth = 1; context.beginPath(); context.roundRect(40, 40, 350, 132, 20); context.fill(); context.stroke()
-    context.fillStyle = trip.theme === 'minimal' ? '#52636c' : '#8da8b9'; context.font = '600 12px Inter, system-ui'; context.fillText('VOYAFRAME  ·  3D GLOBE', 64, 70)
+  context.save(); context.fillStyle = trip.theme === 'minimal' ? 'rgba(255,255,255,.9)' : 'rgba(7,16,25,.9)'; context.strokeStyle = trip.theme === 'minimal' ? 'rgba(50,70,80,.18)' : 'rgba(255,255,255,.12)'; context.lineWidth = 1; context.beginPath(); context.roundRect(40, 40, 350, 132, 14); context.fill(); context.stroke()
+    context.fillStyle = trip.theme === 'minimal' ? '#52636c' : '#9babb5'; context.font = '500 13px Inter, system-ui'; context.fillText(`VoyaFrame  ·  ${trip.language === 'zh' ? '行程预览' : 'Journey preview'}`, 64, 70)
   context.fillStyle = colors.text; context.font = '700 24px Inter, system-ui'; context.fillText(from && to ? `${locationName(from, trip.language)}  →  ${locationName(to, trip.language)}` : trip.name, 64, 108)
   context.fillStyle = trip.theme === 'minimal' ? '#607580' : '#9bb4c4'; context.font = '500 13px Inter, system-ui'; context.fillText(`${t(trip.language, transport)}  ·  ${t(trip.language, 'leg')} ${trip.locations.length > 1 ? index + 1 : 0}/${Math.max(0, trip.locations.length - 1)}`, 64, 139)
-  const barX = 48, barY = 671, barW = 1184; context.fillStyle = trip.theme === 'minimal' ? 'rgba(40,60,70,.14)' : 'rgba(255,255,255,.14)'; context.beginPath(); context.roundRect(barX, barY, barW, 5, 3); context.fill()
-  const gradient = context.createLinearGradient(barX, 0, barX + barW, 0); gradient.addColorStop(0, '#22d3ee'); gradient.addColorStop(1, '#a78bfa'); context.fillStyle = gradient; context.beginPath(); context.roundRect(barX, barY, barW * timeline.progress, 5, 3); context.fill()
-  context.fillStyle = colors.text; context.font = '600 14px Inter, system-ui'; context.fillText(formatTime(timeline.time), barX, 705); context.textAlign = 'right'; context.fillText(formatTime(timeline.totalDuration), barX + barW, 705); context.restore()
-  context.save(); context.textAlign = 'right'; context.font = '500 10px Inter, system-ui'; context.fillStyle = trip.theme === 'minimal' ? 'rgba(25,45,55,.52)' : 'rgba(220,240,250,.48)'; context.fillText('SATELLITE IMAGERY · NASA EARTH OBSERVATORY', 1228, 650); context.restore()
+  const barX = 40, barY = layout.height - 49, barW = layout.width - 80; context.fillStyle = trip.theme === 'minimal' ? 'rgba(40,60,70,.14)' : 'rgba(255,255,255,.14)'; context.beginPath(); context.roundRect(barX, barY, barW, 5, 3); context.fill()
+  const gradient = context.createLinearGradient(barX, 0, barX + barW, 0); gradient.addColorStop(0, '#9bd7e1'); gradient.addColorStop(1, '#d8b477'); context.fillStyle = gradient; context.beginPath(); context.roundRect(barX, barY, barW * timeline.progress, 5, 3); context.fill()
+  context.fillStyle = colors.text; context.font = '600 14px Inter, system-ui'; context.fillText(formatTime(timeline.time), barX, layout.height - 15); context.textAlign = 'right'; context.fillText(formatTime(timeline.totalDuration), barX + barW, layout.height - 15); context.restore()
+  context.save(); context.textAlign = 'right'; context.font = '500 10px Inter, system-ui'; context.fillStyle = trip.theme === 'minimal' ? 'rgba(25,45,55,.52)' : 'rgba(220,240,250,.48)'; context.fillText('SATELLITE IMAGERY · NASA EARTH OBSERVATORY', layout.width - 40, layout.height - 70); context.restore()
 }
 
 export function MapCanvas({ trip, timeline, status, canvasRef, disabled }: Props) {
   const wrapperRef = useRef<HTMLDivElement>(null)
   const dragRef = useRef<{ x: number; y: number; longitude: number; latitude: number } | null>(null)
+  const pointersRef = useRef(new Map<number, { x: number; y: number }>())
+  const pinchRef = useRef<{ distance: number; zoom: number } | null>(null)
   const satelliteCacheRef = useRef<SatelliteCache>({ canvas: null, source: null, sourceImage: '', key: '' })
   const [manualRotation, setManualRotation] = useState<SphericalCoordinate>([0, 0])
   const [zoom, setZoom] = useState(1)
   const [satelliteImage, setSatelliteImage] = useState<HTMLImageElement | null>(null)
   const previousStatusRef = useRef<AnimationStatus>(status)
   const previousTimeRef = useRef(timeline.time)
+  const mobile = useMediaQuery('(max-width: 1023px)')
+  const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
+  const layout = FRAME_LAYOUTS[trip.aspectRatio]
   const cameraLocked = status === 'playing' || status === 'recording'
   useEffect(() => {
     const wasAutomatic = previousStatusRef.current === 'playing' || previousStatusRef.current === 'recording'
@@ -206,41 +216,68 @@ export function MapCanvas({ trip, timeline, status, canvasRef, disabled }: Props
     const automatic = viewFor(trip, timeline, routeCoordinates)
     const rotation = cameraLocked ? [0, 0] as SphericalCoordinate : manualRotation
     const viewCenter: SphericalCoordinate = [automatic.center[0] + rotation[0], Math.max(-82, Math.min(82, automatic.center[1] + rotation[1]))]
-    const projection = geoOrthographic().translate(GLOBE_CENTER).scale(BASE_RADIUS * automatic.zoom * (cameraLocked ? 1 : zoom)).rotate([-viewCenter[0], -viewCenter[1], 0]).clipAngle(90).precision(.35)
-    context.clearRect(0, 0, WIDTH, HEIGHT); drawBackground(context, trip.theme); drawGlobe(context, projection, trip.theme, satelliteImage, viewCenter, satelliteCacheRef.current)
+    const projection = geoOrthographic().translate(layout.globeCenter).scale(layout.baseRadius * automatic.zoom * (cameraLocked ? 1 : zoom)).rotate([-viewCenter[0], -viewCenter[1], 0]).clipAngle(90).precision(.35)
+    context.clearRect(0, 0, layout.width, layout.height); drawBackground(context, trip.theme, layout); drawGlobe(context, projection, trip.theme, satelliteImage, viewCenter, satelliteCacheRef.current, mobile, layout)
     routeCoordinates.forEach((coordinates, index) => {
-      if (timeline.phase === 'completed' || index < timeline.segmentIndex) drawCompletedRoute(context, projection, viewCenter, coordinates)
-      else if (index === timeline.segmentIndex && timeline.phase !== 'idle') drawActiveRoute(context, projection, viewCenter, coordinates, timeline.segmentProgress)
+      const style = trip.legs[index]?.routeStyle ?? 'glow'
+      if (timeline.phase === 'completed' || index < timeline.segmentIndex) drawCompletedRoute(context, projection, viewCenter, coordinates, style)
+      else if (index === timeline.segmentIndex && timeline.phase !== 'idle') drawActiveRoute(context, projection, viewCenter, coordinates, timeline.segmentProgress, style)
       else drawFutureRoute(context, projection, viewCenter, coordinates)
     })
     trip.locations.forEach((location, index) => {
       const reached = timeline.phase === 'idle' || timeline.phase === 'completed' || index <= timeline.segmentIndex + 1; if (!reached) return
       const point = projectVisiblePoint(projection, viewCenter, [location.longitude, location.latitude]); if (!point) return
       const destination = index === timeline.segmentIndex + 1 && timeline.phase !== 'idle'; const arrival = destination && timeline.segmentProgress > .88 ? (now / 900) % 1 : 0
-      drawMarker(context, point.x, point.y, locationName(location, trip.language), destination, arrival, trip.theme)
+      const relatedLeg = trip.legs[Math.max(0, index - 1)]
+      const showLabel = (relatedLeg?.labelTiming ?? 'always') === 'always' || timeline.phase === 'idle' || timeline.phase === 'completed' || destination || index <= timeline.segmentIndex
+      drawMarker(context, point.x, point.y, showLabel ? locationName(location, trip.language) : '', destination, arrival, trip.theme)
     })
     if ((timeline.phase === 'flight' || timeline.phase === 'hold') && routeCoordinates[timeline.segmentIndex]) {
       const coordinates = routeCoordinates[timeline.segmentIndex]; const currentIndex = Math.min(coordinates.length - 1, Math.round(timeline.segmentProgress * (coordinates.length - 1))); const nextIndex = Math.min(coordinates.length - 1, currentIndex + 1)
       const point = projectVisiblePoint(projection, viewCenter, coordinates[currentIndex]); const next = projectVisiblePoint(projection, viewCenter, coordinates[nextIndex])
       if (point) drawVehicle(context, point, next ? Math.atan2(next.y - point.y, next.x - point.x) : 0, trip.legs[timeline.segmentIndex]?.transport ?? 'plane')
     }
-    drawHud(context, trip, timeline)
-  }, [cameraLocked, manualRotation, routeCoordinates, satelliteImage, timeline, trip, zoom])
-  useCanvasRenderer(canvasRef, draw)
+    if (!mobile || status === 'recording') drawHud(context, trip, timeline, layout)
+  }, [cameraLocked, layout, manualRotation, mobile, routeCoordinates, satelliteImage, status, timeline, trip, zoom])
+  useCanvasRenderer(canvasRef, draw, status === 'recording' ? 60 : mobile || reducedMotion ? 30 : 60)
 
-  const onPointerDown = (event: ReactPointerEvent<HTMLCanvasElement>) => { if (disabled || cameraLocked) return; event.currentTarget.setPointerCapture(event.pointerId); dragRef.current = { x: event.clientX, y: event.clientY, longitude: manualRotation[0], latitude: manualRotation[1] } }
-  const onPointerMove = (event: ReactPointerEvent<HTMLCanvasElement>) => { const drag = dragRef.current; if (!drag) return; setManualRotation([drag.longitude - (event.clientX - drag.x) * .28, Math.max(-70, Math.min(70, drag.latitude + (event.clientY - drag.y) * .22))]) }
-  const onPointerUp = () => { dragRef.current = null }
+  const onPointerDown = (event: ReactPointerEvent<HTMLCanvasElement>) => {
+    if (disabled || cameraLocked) return
+    event.currentTarget.setPointerCapture(event.pointerId)
+    pointersRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
+    const points = [...pointersRef.current.values()]
+    if (points.length === 2) {
+      pinchRef.current = { distance: Math.hypot(points[1].x - points[0].x, points[1].y - points[0].y), zoom }
+      dragRef.current = null
+    } else dragRef.current = { x: event.clientX, y: event.clientY, longitude: manualRotation[0], latitude: manualRotation[1] }
+  }
+  const onPointerMove = (event: ReactPointerEvent<HTMLCanvasElement>) => {
+    if (!pointersRef.current.has(event.pointerId)) return
+    pointersRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
+    const points = [...pointersRef.current.values()]
+    if (points.length === 2 && pinchRef.current) {
+      const distance = Math.hypot(points[1].x - points[0].x, points[1].y - points[0].y)
+      setZoom(Math.max(.7, Math.min(1.65, pinchRef.current.zoom * distance / Math.max(1, pinchRef.current.distance))))
+      return
+    }
+    const drag = dragRef.current
+    if (drag) setManualRotation([drag.longitude - (event.clientX - drag.x) * .28, Math.max(-70, Math.min(70, drag.latitude + (event.clientY - drag.y) * .22))])
+  }
+  const onPointerUp = (event: ReactPointerEvent<HTMLCanvasElement>) => {
+    pointersRef.current.delete(event.pointerId)
+    pinchRef.current = null
+    dragRef.current = null
+  }
   const onWheel = (event: WheelEvent<HTMLCanvasElement>) => { if (disabled || cameraLocked) return; setZoom((value) => Math.max(.7, Math.min(1.65, value * Math.exp(-event.deltaY * .001)))) }
   const changeZoom = (factor: number) => setZoom((value) => Math.max(.7, Math.min(1.65, value * factor)))
   const toggleFullscreen = () => { if (!document.fullscreenElement) void wrapperRef.current?.requestFullscreen(); else void document.exitFullscreen() }
 
   return <div ref={wrapperRef} className="group relative flex h-full w-full items-center justify-center overflow-hidden bg-[#071018]">
-    <canvas ref={canvasRef} width={WIDTH} height={HEIGHT} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp} onWheel={onWheel} className="block h-full max-h-full w-full touch-none object-contain active:cursor-grabbing" aria-label={t(trip.language, 'canvasLabel')} />
-    <div className="absolute right-4 top-4 flex items-center gap-2">
-      <div className="flex overflow-hidden rounded-xl border border-white/15 bg-black/35 backdrop-blur"><button type="button" onClick={() => changeZoom(1.12)} disabled={disabled || cameraLocked} className="px-3 py-2 text-sm font-bold hover:bg-white/10 disabled:opacity-40" aria-label={t(trip.language, 'zoomIn')}>＋</button><button type="button" onClick={() => changeZoom(.89)} disabled={disabled || cameraLocked} className="border-l border-white/10 px-3 py-2 text-sm font-bold hover:bg-white/10 disabled:opacity-40" aria-label={t(trip.language, 'zoomOut')}>−</button><button type="button" onClick={() => { setZoom(1); setManualRotation([0, 0]) }} disabled={disabled || cameraLocked} className="border-l border-white/10 px-3 py-2 text-[10px] font-semibold hover:bg-white/10 disabled:opacity-40">{t(trip.language, 'reset')}</button></div>
-      <button type="button" onClick={toggleFullscreen} disabled={disabled} className="rounded-xl border border-white/15 bg-black/35 px-3 py-2 text-xs font-semibold text-white backdrop-blur hover:bg-black/55 disabled:opacity-40">⛶ {t(trip.language, 'fullscreen')}</button>
+    <canvas ref={canvasRef} width={layout.width} height={layout.height} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp} onWheel={onWheel} className="block h-full max-h-full w-full touch-none object-contain object-center active:cursor-grabbing" aria-label={t(trip.language, 'canvasLabel')} />
+    <div className="absolute right-3 top-[calc(.75rem+env(safe-area-inset-top))] flex items-center gap-2 sm:right-4 sm:top-4">
+      <div className="flex overflow-hidden rounded-xl border border-white/10 bg-[#09131c]/90 shadow-[0_8px_24px_rgba(0,0,0,.2)]"><button type="button" onClick={() => changeZoom(1.12)} disabled={disabled || cameraLocked} className="flex h-11 w-11 items-center justify-center text-white/70 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-35" aria-label={t(trip.language, 'zoomIn')}><Icon name="zoomIn" size={17} /></button><button type="button" onClick={() => changeZoom(.89)} disabled={disabled || cameraLocked} className="flex h-11 w-11 items-center justify-center border-l border-white/10 text-white/70 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-35" aria-label={t(trip.language, 'zoomOut')}><Icon name="zoomOut" size={17} /></button><button type="button" onClick={() => { setZoom(1); setManualRotation([0, 0]) }} disabled={disabled || cameraLocked} className="flex h-11 w-11 items-center justify-center border-l border-white/10 text-white/70 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-35" aria-label={t(trip.language, 'reset')} title={t(trip.language, 'reset')}><Icon name="reset" size={17} /></button></div>
+      {'fullscreenEnabled' in document && <button type="button" onClick={toggleFullscreen} disabled={disabled} className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#09131c]/90 text-white/70 shadow-[0_8px_24px_rgba(0,0,0,.2)] transition-colors hover:bg-[#111f29] hover:text-white disabled:opacity-35" aria-label={t(trip.language, 'fullscreen')} title={t(trip.language, 'fullscreen')}><Icon name="expand" size={17} /></button>}
     </div>
-    <div className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full border border-white/10 bg-black/25 px-3 py-1.5 text-[9px] text-white/50 backdrop-blur">{t(trip.language, 'gesture')}</div>
+    <div className="gesture-hint pointer-events-none absolute bottom-3 left-1/2 hidden -translate-x-1/2 whitespace-nowrap rounded-lg border border-white/10 bg-[#09131c]/80 px-3 py-1.5 text-[11px] text-white/50 sm:block">{t(trip.language, 'gesture')}</div>
   </div>
 }

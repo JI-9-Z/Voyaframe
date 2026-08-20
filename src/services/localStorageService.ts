@@ -5,13 +5,25 @@ import { rebuildLegs } from '../lib/tripModel'
 // 保留旧键名，确保品牌升级后用户已经保存的行程不会丢失。
 const STORAGE_KEY = 'travel-motion:trip:v1'
 
+export function normalizeTrip(value: unknown): Trip | null {
+  if (!value || typeof value !== 'object') return null
+  const parsed = value as Trip & { transport?: 'plane' | 'car' | 'train' | 'ship' }
+  if (!parsed.name || !Array.isArray(parsed.locations) || parsed.locations.length < 2) return null
+  return {
+    ...parsed,
+    speed: ['fast', 'standard', 'slow'].includes(parsed.speed) ? parsed.speed : 'standard',
+    theme: ['midnight', 'ocean', 'minimal'].includes(parsed.theme) ? parsed.theme : 'midnight',
+    language: parsed.language === 'en' ? 'en' : 'zh',
+    aspectRatio: ['16:9', '9:16', '1:1'].includes(parsed.aspectRatio) ? parsed.aspectRatio : '16:9',
+    legs: rebuildLegs(parsed.locations, parsed.legs, parsed.transport ?? 'plane'),
+  }
+}
+
 export function loadTrip(): Trip {
   try {
     const value = localStorage.getItem(STORAGE_KEY)
     if (!value) return DEFAULT_TRIP
-    const parsed = JSON.parse(value) as Trip & { transport?: 'plane' | 'car' | 'train' | 'ship' }
-    if (!parsed.name || !Array.isArray(parsed.locations)) return DEFAULT_TRIP
-    return { ...parsed, language: parsed.language === 'en' ? 'en' : 'zh', legs: rebuildLegs(parsed.locations, parsed.legs, parsed.transport ?? 'plane') }
+    return normalizeTrip(JSON.parse(value)) ?? DEFAULT_TRIP
   } catch {
     return DEFAULT_TRIP
   }

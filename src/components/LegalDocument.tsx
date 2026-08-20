@@ -50,11 +50,11 @@ function TermsOfUse() {
 
 export function LegalDocument({ page }: { page: LegalPage }) {
   return (
-    <main className="min-h-dvh overflow-auto bg-[#061018] px-5 py-10 text-slate-300">
-      <article className="legal-document mx-auto max-w-3xl rounded-3xl border border-white/10 bg-white/[.04] p-6 shadow-2xl sm:p-10">
+    <main className="min-h-dvh overflow-auto bg-[var(--app-bg)] px-5 py-10 text-[var(--text-muted)]">
+      <article className="legal-document mx-auto max-w-3xl rounded-2xl border border-[var(--border)] bg-[var(--panel)] p-6 sm:p-10">
         {page === 'privacy' ? <PrivacyPolicy /> : <TermsOfUse />}
-        <div className="mt-10 border-t border-white/10 pt-5 text-xs text-slate-500">
-          <a href={siteConfig.siteUrl || import.meta.env.BASE_URL} className="text-cyan-300 hover:text-cyan-200">返回{brand.zh}</a>
+        <div className="mt-10 border-t border-[var(--border)] pt-5 text-xs text-[var(--text-faint)]">
+          <a href={siteConfig.siteUrl || import.meta.env.BASE_URL} className="text-[var(--accent)] hover:text-[var(--accent-strong)]">返回{brand.zh}</a>
         </div>
       </article>
     </main>
