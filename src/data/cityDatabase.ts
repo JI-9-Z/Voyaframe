@@ -143,13 +143,14 @@ export const DEFAULT_TRIP: Trip = {
     location('东京', 'tokyo'),
   ],
   legs: [
-    { id: 'beijing→paris', fromId: 'beijing', toId: 'paris', transport: 'plane' },
-    { id: 'paris→new-york', fromId: 'paris', toId: 'new-york', transport: 'plane' },
-    { id: 'new-york→tokyo', fromId: 'new-york', toId: 'tokyo', transport: 'plane' },
+    { id: 'beijing→paris', fromId: 'beijing', toId: 'paris', transport: 'plane', routeStyle: 'glow', labelTiming: 'always' },
+    { id: 'paris→new-york', fromId: 'paris', toId: 'new-york', transport: 'plane', routeStyle: 'glow', labelTiming: 'always' },
+    { id: 'new-york→tokyo', fromId: 'new-york', toId: 'tokyo', transport: 'plane', routeStyle: 'glow', labelTiming: 'always' },
   ],
   speed: 'standard',
   theme: 'midnight',
   language: 'zh',
+  aspectRatio: '16:9',
 }
 
 export function createLocation(city: City): Location {

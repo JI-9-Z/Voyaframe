@@ -55,17 +55,38 @@ npm run verify:static
 - 到达标记光圈、城市名称、当前航段信息和统一进度条
 - 全行程、当前航段与下一航段之间的镜头缩放/平移
 - 基于单一 `requestAnimationFrame` 时间轴的播放、暂停、继续、重播和拖动定位
-- 快速（2 秒）、标准（4 秒）、慢速（6 秒）三档航段速度，每段后停留 1 秒
+- 快速（2 秒）、标准（4 秒）、慢速（6 秒）三档全局预设，并可逐航段覆盖行驶时长和到达停留
 - 2500 个 GeoNames 全球主要城市，加上中国完整地级层级数据与精选中文城市；去重后共 2632 个本地城市
 - 中国数据新增 372 条带中心坐标的地级层级、直辖市和港澳记录，覆盖大陆全部地级行政区
 - 中文、英文界面一键切换，语言选择随行程保存
 - 城市搜索同时支持中文、英文、拼音、国家和省份，例如 `石家庄`、`Shijiazhuang`、`shi jia zhuang` 均可命中
 - 每一段行程可独立选择飞机、汽车、火车或轮船
+- 每一段可独立设置镜头倍率、发光/简洁/虚线路线和城市标签出现时机
 - Midnight、Ocean、Minimal Light 三种地图主题
 - `localStorage` 自动保存最近编辑的行程
-- `Canvas.captureStream()` + `MediaRecorder` 录制 1280×720、16:9 视频
+- 桌面拖拽排序、移动端上移/下移、40 步编辑撤销
+- 中国经典、欧洲铁路、环太平洋三组可编辑路线模板
+- 行程 JSON 备份与恢复，便于换设备迁移或手动留档
+- `Canvas.captureStream()` + `MediaRecorder` 录制 16:9（1280×720）、1:1（1080×1080）或 9:16（720×1280）视频
 - 录制进度、取消导出和完成后自动下载
-- 桌面双栏布局、平板适配和手机底部编辑面板
+- 桌面双栏布局、平板适配和手机全屏地图
+- 手机端三级底部抽屉（收起、半屏编辑、全屏编辑）与安全区适配
+- 单指旋转、双指缩放、加大触控热区和移动端 30 FPS 预览降级
+- 可安装 PWA、离线应用壳、网络状态提示和新版本刷新提示
+
+## 移动端与 PWA
+
+部署到 HTTPS 域名后，Android Chrome/Edge 在满足浏览器安装条件时，会在编辑面板中显示“安装帧足记”。安装后可从桌面图标以独立窗口打开。iPhone/iPad 的 Safari 不支持网页内 `beforeinstallprompt` 按钮，需要使用浏览器的“分享 → 添加到主屏幕”。
+
+`public/sw.js` 会缓存应用壳、构建后的静态资源、卫星底图和用户访问过的同源文件。首次成功在线打开后，断网仍可进入应用并读取 `localStorage` 中的最近行程。城市库和地图本来就是本地资源，因此核心编辑和播放可以离线工作。
+
+静态托管时请注意：
+
+- 必须使用 HTTPS，测试环境 `localhost` 例外；
+- `sw.js`、`index.html` 和 `site.webmanifest` 不要设置长期强缓存，建议每次回源校验；
+- 带内容哈希的 `assets/*` 可设置一年强缓存；
+- 更新部署后，已打开的用户会在编辑面板看到“发现新版本”，点击刷新后生效；
+- PWA 是第一阶段移动端形态，不需要应用商店审核。后续可在此基础上使用 Capacitor 封装 Android/iOS 安装包。
 
 ## 视频格式说明
 
@@ -93,9 +114,12 @@ src/
     cityDatabase.ts            内置城市和默认行程
     globalCities.json          GeoNames 全球主要城市（2500 条）
     chinaPrefectureCities.json 中国地级层级城市、拼音、行政区代码与坐标
+    tripTemplates.ts           内置路线模板
   hooks/
     useTripAnimation.ts        requestAnimationFrame 时间轴
     useCanvasRenderer.ts       Canvas 重绘循环
+    useMediaQuery.ts           响应式能力检测
+    usePwa.ts                  PWA 安装、离线状态与版本更新
     useVideoRecorder.ts        录制状态封装
   lib/
     coordinateProjection.ts    Canvas 点类型
@@ -108,10 +132,13 @@ src/
     VehicleRenderer.ts         交通工具绘制
   services/
     localStorageService.ts     行程持久化
+    tripFileService.ts         JSON 行程导入导出
     recordingService.ts        captureStream 与 MediaRecorder
   App.tsx                      应用状态和模块编排
 public/
   earth-blue-marble.jpg        NASA Blue Marble 本地卫星影像
+  site.webmanifest             PWA 名称、图标与启动方式
+  sw.js                        离线缓存与版本更新 Service Worker
 ```
 
 ## 技术说明
@@ -124,12 +151,24 @@ public/
 - 播放时镜头会快速切入当前航段的稳定机位；航段内地球尽量保持静止，仅在航段切换和最终定格时平滑过渡，并采用更近的默认缩放突出交通工具。
 - 拖拽会调整球体旋转，滚轮或右上角按钮可在 70%–165% 范围缩放；开始播放或重播时会清除手动视角偏移并恢复自动镜头。播放和录制期间手动镜头控制会暂时锁定。
 - 每一帧都从当前绝对时间重新计算航段、进度、载具位置、路线状态和镜头，不使用一组独立 `setTimeout`。
-- UI 预览与录制共用同一个固定分辨率 Canvas；左侧编辑器和 HTML 控件不会进入视频画面。
+- UI 预览与录制共用同一个按所选画幅切换分辨率的 Canvas；左侧编辑器和 HTML 控件不会进入视频画面。
+- 手机和平板预览默认限制为 30 FPS 并降低卫星纹理网格密度，录制时恢复 60 FPS 时间轴绘制；这样在不降低导出分辨率的前提下减少发热和掉帧。
 - Natural Earth 1:110m 数据适合全球视图，但仍是制图简化数据，不适合街道级导航或测绘分析。
 
 ## 已知限制
 
 - MediaRecorder 编码能力、最大稳定录制时长和 MP4 支持由浏览器及操作系统决定。
+- iOS Safari 对 `Canvas.captureStream()`、MediaRecorder MIME 和自动文件下载的支持随系统版本变化；不支持时界面会禁用导出，用户仍可播放动画并使用系统录屏。
+- PWA 的网页内安装按钮依赖 Chromium 的非标准 `beforeinstallprompt` 事件；iOS Safari 需要手动“添加到主屏幕”。
+- Service Worker 离线能力需至少成功在线访问一次；浏览器清理站点数据后缓存和最近行程都会被移除。
+- JSON 导入只接受帧足记当前数据结构；损坏或缺少至少两个地点的文件会被拒绝。
+
+## 品牌与界面规范
+
+项目采用“旅行纪录工具”而非“生成器模板”的视觉方向：克制的深墨工作台、海水蓝主强调色、暖金到达状态、统一单线 SVG 图标，以及由“画面帧 + 旅行路径”构成的 VoyaFrame 标记。组件颜色、圆角、字号、图标和 Logo 使用规则见 [品牌与界面规范](docs/brand-guidelines.md)。
+
+其他限制：
+
 - 浏览器端录制按实时速度执行，导出 20 秒动画约需 20 秒，页面必须保持打开。
 - 切换后台标签页后浏览器可能降低 `requestAnimationFrame` 频率，从而延长录制时间。
 - 当前城市库为离线固定数据，不提供地址搜索、地理编码或自定义坐标输入。

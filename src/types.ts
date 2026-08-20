@@ -18,12 +18,20 @@ export type MapTheme = 'midnight' | 'ocean' | 'minimal'
 export type Speed = 'fast' | 'standard' | 'slow'
 export type Language = 'zh' | 'en'
 export type AnimationStatus = 'idle' | 'playing' | 'paused' | 'completed' | 'recording'
+export type RouteStyle = 'glow' | 'clean' | 'dashed'
+export type LabelTiming = 'always' | 'arrival'
+export type AspectRatio = '16:9' | '9:16' | '1:1'
 
 export interface TripLeg {
   id: string
   fromId: string
   toId: string
   transport: Transport
+  duration?: number
+  holdDuration?: number
+  cameraZoom?: number
+  routeStyle?: RouteStyle
+  labelTiming?: LabelTiming
 }
 
 export interface Trip {
@@ -33,6 +41,7 @@ export interface Trip {
   speed: Speed
   theme: MapTheme
   language: Language
+  aspectRatio: AspectRatio
 }
 
 export interface TimelineState {

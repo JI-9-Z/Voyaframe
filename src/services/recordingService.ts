@@ -18,11 +18,13 @@ export function getRecordingSupport(): { supported: boolean; format: string } {
   return { supported: Boolean(choice && HTMLCanvasElement.prototype.captureStream), format: choice?.extension.toUpperCase() ?? '不支持' }
 }
 
-export function startCanvasRecording(canvas: HTMLCanvasElement, tripName: string, fps = 60): RecordingSession | null {
+export function startCanvasRecording(canvas: HTMLCanvasElement, tripName: string, fps?: number): RecordingSession | null {
   const choice = preferredMimeType()
   if (!choice || !canvas.captureStream) return null
-  const stream = canvas.captureStream(fps)
-  const recorder = new MediaRecorder(stream, { mimeType: choice.mimeType, videoBitsPerSecond: 8_000_000 })
+  const mobile = window.matchMedia('(max-width: 1023px)').matches
+  const targetFps = fps ?? (mobile ? 30 : 60)
+  const stream = canvas.captureStream(targetFps)
+  const recorder = new MediaRecorder(stream, { mimeType: choice.mimeType, videoBitsPerSecond: mobile ? 5_000_000 : 8_000_000 })
   const chunks: Blob[] = []
   recorder.ondataavailable = (event) => { if (event.data.size) chunks.push(event.data) }
   recorder.start(250)

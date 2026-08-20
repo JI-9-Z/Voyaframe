@@ -1,5 +1,6 @@
 import { geoDistance, type GeoProjection } from 'd3-geo'
 import type { Point } from '../lib/coordinateProjection'
+import type { RouteStyle } from '../types'
 
 export type SphericalCoordinate = [number, number]
 
@@ -30,14 +31,20 @@ export function drawFutureRoute(context: CanvasRenderingContext2D, projection: G
   context.save(); context.setLineDash([7, 9]); context.lineWidth = 1.8; context.strokeStyle = 'rgba(174, 192, 214, .25)'; traceVisibleRoute(context, projection, center, coordinates, 1); context.stroke(); context.restore()
 }
 
-export function drawCompletedRoute(context: CanvasRenderingContext2D, projection: GeoProjection, center: SphericalCoordinate, coordinates: SphericalCoordinate[]): void {
-  context.save(); context.lineWidth = 2.8; context.strokeStyle = 'rgba(94, 234, 212, .7)'; traceVisibleRoute(context, projection, center, coordinates, 1); context.stroke(); context.restore()
+function applyRouteStyle(context: CanvasRenderingContext2D, style: RouteStyle, active: boolean): void {
+  if (style === 'dashed') context.setLineDash(active ? [11, 8] : [8, 7])
+  context.lineWidth = style === 'clean' ? (active ? 3.2 : 2.2) : (active ? 5 : 2.8)
+  context.shadowBlur = style === 'glow' && active ? 12 : 0
 }
 
-export function drawActiveRoute(context: CanvasRenderingContext2D, projection: GeoProjection, center: SphericalCoordinate, coordinates: SphericalCoordinate[], progress: number): void {
-  context.save(); context.lineCap = 'round'; context.lineJoin = 'round'; context.lineWidth = 5; context.shadowBlur = 18; context.shadowColor = '#60a5fa'
+export function drawCompletedRoute(context: CanvasRenderingContext2D, projection: GeoProjection, center: SphericalCoordinate, coordinates: SphericalCoordinate[], style: RouteStyle = 'glow'): void {
+  context.save(); applyRouteStyle(context, style, false); context.strokeStyle = 'rgba(155, 215, 225, .72)'; traceVisibleRoute(context, projection, center, coordinates, 1); context.stroke(); context.restore()
+}
+
+export function drawActiveRoute(context: CanvasRenderingContext2D, projection: GeoProjection, center: SphericalCoordinate, coordinates: SphericalCoordinate[], progress: number, style: RouteStyle = 'glow'): void {
+  context.save(); context.lineCap = 'round'; context.lineJoin = 'round'; applyRouteStyle(context, style, true); context.shadowColor = 'rgba(155,215,225,.62)'
   const start = projection(coordinates[0]) ?? [0, 0]; const end = projection(coordinates[coordinates.length - 1]) ?? [1280, 720]
-  const gradient = context.createLinearGradient(start[0], start[1], end[0], end[1]); gradient.addColorStop(0, '#22d3ee'); gradient.addColorStop(.52, '#818cf8'); gradient.addColorStop(1, '#c084fc'); context.strokeStyle = gradient
+  const gradient = context.createLinearGradient(start[0], start[1], end[0], end[1]); gradient.addColorStop(0, '#9bd7e1'); gradient.addColorStop(.72, '#b5dde1'); gradient.addColorStop(1, '#d8b477'); context.strokeStyle = gradient
   traceVisibleRoute(context, projection, center, coordinates, progress); context.stroke(); context.restore()
 }
 
