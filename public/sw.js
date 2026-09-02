@@ -1,4 +1,4 @@
-const CACHE_NAME = 'voyaframe-shell-v4'
+const CACHE_NAME = 'voyaframe-shell-v5'
 const APP_SHELL = ['site.webmanifest', 'favicon.svg', 'earth-blue-marble.jpg']
 
 async function precacheAppShell() {

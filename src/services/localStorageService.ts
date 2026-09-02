@@ -15,6 +15,16 @@ export function normalizeTrip(value: unknown): Trip | null {
     theme: ['midnight', 'ocean', 'minimal'].includes(parsed.theme) ? parsed.theme : 'midnight',
     language: parsed.language === 'en' ? 'en' : 'zh',
     aspectRatio: ['16:9', '9:16', '1:1'].includes(parsed.aspectRatio) ? parsed.aspectRatio : '16:9',
+    story: {
+      subtitle: parsed.story?.subtitle ?? '',
+      traveler: parsed.story?.traveler ?? '',
+      introDuration: Math.max(0, Math.min(8, parsed.story?.introDuration ?? 2.5)),
+      outroDuration: Math.max(0, Math.min(8, parsed.story?.outroDuration ?? 3)),
+      showStats: parsed.story?.showStats ?? true,
+      musicAssetId: parsed.story?.musicAssetId,
+      musicName: parsed.story?.musicName,
+      musicVolume: Math.max(0, Math.min(1, parsed.story?.musicVolume ?? .35)),
+    },
     legs: rebuildLegs(parsed.locations, parsed.legs, parsed.transport ?? 'plane'),
   }
 }

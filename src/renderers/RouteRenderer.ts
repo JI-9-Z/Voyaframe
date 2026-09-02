@@ -1,4 +1,4 @@
-import { geoDistance, type GeoProjection } from 'd3-geo'
+import { geoDistance, geoInterpolate, type GeoProjection } from 'd3-geo'
 import type { Point } from '../lib/coordinateProjection'
 import type { RouteStyle } from '../types'
 
@@ -15,11 +15,15 @@ function traceVisibleRoute(
   coordinates: SphericalCoordinate[],
   progress: number,
 ): void {
-  const last = Math.max(1, Math.min(coordinates.length - 1, Math.ceil((coordinates.length - 1) * progress)))
+  const position = Math.max(0, Math.min(1, progress)) * (coordinates.length - 1)
+  const last = Math.max(0, Math.min(coordinates.length - 1, Math.floor(position)))
+  const trace = coordinates.slice(0, last + 1)
+  if (last < coordinates.length - 1 && position > last) {
+    trace.push(geoInterpolate(coordinates[last], coordinates[last + 1])(position - last) as SphericalCoordinate)
+  }
   context.beginPath()
   let drawing = false
-  for (let index = 0; index <= last; index += 1) {
-    const coordinate = coordinates[index]
+  for (const coordinate of trace) {
     const projected = projection(coordinate)
     if (!projected || !visible(coordinate, viewCenter)) { drawing = false; continue }
     if (!drawing) { context.moveTo(projected[0], projected[1]); drawing = true }

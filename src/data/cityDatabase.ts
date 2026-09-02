@@ -151,6 +151,14 @@ export const DEFAULT_TRIP: Trip = {
   theme: 'midnight',
   language: 'zh',
   aspectRatio: '16:9',
+  story: {
+    subtitle: '四座城市，一次跨越世界的旅程',
+    traveler: '',
+    introDuration: 2.5,
+    outroDuration: 3,
+    showStats: true,
+    musicVolume: .35,
+  },
 }
 
 export function createLocation(city: City): Location {

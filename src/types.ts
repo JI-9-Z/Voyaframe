@@ -11,6 +11,9 @@ export interface Location {
   latitude: number
   longitude: number
   date?: string
+  story?: string
+  photoAssetId?: string
+  photoName?: string
 }
 
 export type Transport = 'plane' | 'car' | 'train' | 'ship'
@@ -21,6 +24,17 @@ export type AnimationStatus = 'idle' | 'playing' | 'paused' | 'completed' | 'rec
 export type RouteStyle = 'glow' | 'clean' | 'dashed'
 export type LabelTiming = 'always' | 'arrival'
 export type AspectRatio = '16:9' | '9:16' | '1:1'
+
+export interface TripStory {
+  subtitle: string
+  traveler: string
+  introDuration: number
+  outroDuration: number
+  showStats: boolean
+  musicAssetId?: string
+  musicName?: string
+  musicVolume: number
+}
 
 export interface TripLeg {
   id: string
@@ -42,6 +56,7 @@ export interface Trip {
   theme: MapTheme
   language: Language
   aspectRatio: AspectRatio
+  story: TripStory
 }
 
 export interface TimelineState {
@@ -51,7 +66,9 @@ export interface TimelineState {
   segmentIndex: number
   segmentProgress: number
   holdProgress: number
-  phase: 'idle' | 'flight' | 'hold' | 'completed'
+  introProgress: number
+  outroProgress: number
+  phase: 'idle' | 'intro' | 'flight' | 'hold' | 'outro' | 'completed'
 }
 
 export interface Camera {

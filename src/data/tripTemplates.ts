@@ -13,5 +13,5 @@ export const TRIP_TEMPLATES: TripTemplate[] = [
 export function tripFromTemplate(template: TripTemplate, current: Trip, language: Language): Trip {
   const locations = template.cities.map((name) => createLocation(CITY_DATABASE.find((city) => city.name === name)!))
   const legs = rebuildLegs(locations).map((leg, index) => ({ ...leg, transport: template.transports[index] ?? 'plane' as Transport }))
-  return { ...current, name: language === 'zh' ? template.nameZh : template.nameEn, locations, legs }
+  return { ...current, name: language === 'zh' ? template.nameZh : template.nameEn, locations, legs, story: { ...current.story, subtitle: language === 'zh' ? `${locations.length}座城市，一段新的旅行故事` : `${locations.length} cities, one new journey` } }
 }
