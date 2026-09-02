@@ -62,11 +62,16 @@ npm run verify:static
 - 城市搜索同时支持中文、英文、拼音、国家和省份，例如 `石家庄`、`Shijiazhuang`、`shi jia zhuang` 均可命中
 - 每一段行程可独立选择飞机、汽车、火车或轮船
 - 每一段可独立设置镜头倍率、发光/简洁/虚线路线和城市标签出现时机
+- 可编辑片头副标题、旅行者署名、片头片尾时长和片尾统计开关
+- 自动生成城市数量、国家和地区数量、航段数量与大圆总里程统计卡片
+- 每个地点可添加旅行日期、短文和本地照片，到达停留时显示故事卡片
+- 可上传本地背景音乐、调节音量，并在浏览器支持时随视频一起录制
 - Midnight、Ocean、Minimal Light 三种地图主题
 - `localStorage` 自动保存最近编辑的行程
 - 桌面拖拽排序、移动端上移/下移、40 步编辑撤销
 - 中国经典、欧洲铁路、环太平洋三组可编辑路线模板
 - 行程 JSON 备份与恢复，便于换设备迁移或手动留档
+- JSON v2 会嵌入地点照片和背景音乐，可在另一台设备完整恢复故事素材
 - `Canvas.captureStream()` + `MediaRecorder` 录制 16:9（1280×720）、1:1（1080×1080）或 9:16（720×1280）视频
 - 录制进度、取消导出和完成后自动下载
 - 桌面双栏布局、平板适配和手机全屏地图
@@ -109,6 +114,7 @@ src/
     MapCanvas.tsx              3D 地球、地图与动画画布
     TimelineControls.tsx       时间轴与播放控制
     TripInfoCard.tsx           预览状态卡片
+    StoryEditor.tsx            片头片尾、统计和背景音乐编辑
     ExportDialog.tsx           导出进度与错误提示
   data/
     cityDatabase.ts            内置城市和默认行程
@@ -120,6 +126,8 @@ src/
     useCanvasRenderer.ts       Canvas 重绘循环
     useMediaQuery.ts           响应式能力检测
     usePwa.ts                  PWA 安装、离线状态与版本更新
+    useTripAudio.ts            音乐播放同步与录制音轨
+    useTripMediaImages.ts      IndexedDB 照片加载与 Canvas 图片缓存
     useVideoRecorder.ts        录制状态封装
   lib/
     coordinateProjection.ts    Canvas 点类型
@@ -127,13 +135,15 @@ src/
     tripModel.ts               航段模型与数据迁移
     animationTimeline.ts       统一时间轴状态计算
     i18n.ts                    中英文界面文案与地点显示名称
+    tripStats.ts               行程里程与城市统计
   renderers/
     RouteRenderer.ts           路线样式绘制
     VehicleRenderer.ts         交通工具绘制
   services/
     localStorageService.ts     行程持久化
-    tripFileService.ts         JSON 行程导入导出
     recordingService.ts        captureStream 与 MediaRecorder
+    mediaStorageService.ts     IndexedDB 照片、音乐和媒体压缩
+    tripFileService.ts         带媒体的 JSON v2 备份与恢复
   App.tsx                      应用状态和模块编排
 public/
   earth-blue-marble.jpg        NASA Blue Marble 本地卫星影像
@@ -143,7 +153,7 @@ public/
 
 ## 技术说明
 
-- 地图采用 `d3-geo` 正射投影，将本地卫星影像通过三角网格映射到 Canvas 球面，并叠加经纬网与国界。
+- 地图采用 `d3-geo` 正射投影；本地卫星影像由浏览器原生 WebGL 映射到球面，再合成到 Canvas，并叠加经纬网、国界、路线和故事画面。WebGL 不可用时自动退化为简化陆地图层。
 - 卫星底图来自 NASA Earth Observatory 的 Blue Marble Next Generation，文件随项目本地加载；国界来自 `world-atlas` 内置的 Natural Earth 1:110m TopoJSON。应用运行时不调用地图 API，也不需要 API Key。
 - 城市基础数据来自 GeoNames `cities15000`，项目选取其中人口较多的 2500 个城市并离线打包；原有精选城市保留中文名称并优先展示。
 - 航线使用球面大圆插值，因此跨越 ±180° 日期变更线时自然走最短路径。
@@ -151,8 +161,11 @@ public/
 - 播放时镜头会快速切入当前航段的稳定机位；航段内地球尽量保持静止，仅在航段切换和最终定格时平滑过渡，并采用更近的默认缩放突出交通工具。
 - 拖拽会调整球体旋转，滚轮或右上角按钮可在 70%–165% 范围缩放；开始播放或重播时会清除手动视角偏移并恢复自动镜头。播放和录制期间手动镜头控制会暂时锁定。
 - 每一帧都从当前绝对时间重新计算航段、进度、载具位置、路线状态和镜头，不使用一组独立 `setTimeout`。
+- 统一时间轴包含片头、全部航段、抵达停留和片尾；拖动进度条时标题、照片卡片和统计卡片同步变化。
 - UI 预览与录制共用同一个按所选画幅切换分辨率的 Canvas；左侧编辑器和 HTML 控件不会进入视频画面。
-- 手机和平板预览默认限制为 30 FPS 并降低卫星纹理网格密度，录制时恢复 60 FPS 时间轴绘制；这样在不降低导出分辨率的前提下减少发热和掉帧。
+- 照片上传后会在浏览器端缩放至最长边 1800 像素并压缩为 JPEG；照片和音乐 Blob 存入 IndexedDB，行程配置仍存入 localStorage。
+- 背景音乐通过 Web Audio 输出到扬声器和 MediaStream 音轨，再与 Canvas 视频流一起交给 MediaRecorder。
+- 手机和平板预览默认限制为 30 FPS；录制时恢复 60 FPS 时间轴绘制。卫星球面使用 GPU 渲染，路线与文字仍由同一导出 Canvas 合成，避免自动镜头移动时出现纹理跳格。
 - Natural Earth 1:110m 数据适合全球视图，但仍是制图简化数据，不适合街道级导航或测绘分析。
 
 ## 已知限制
@@ -162,6 +175,9 @@ public/
 - PWA 的网页内安装按钮依赖 Chromium 的非标准 `beforeinstallprompt` 事件；iOS Safari 需要手动“添加到主屏幕”。
 - Service Worker 离线能力需至少成功在线访问一次；浏览器清理站点数据后缓存和最近行程都会被移除。
 - JSON 导入只接受帧足记当前数据结构；损坏或缺少至少两个地点的文件会被拒绝。
+- 照片和音乐保存在当前浏览器的 IndexedDB 中；清理站点数据会同时删除行程和媒体，请使用 JSON 备份长期保存。
+- 含大量照片或长音乐的 JSON 文件可能很大，导入导出速度与设备内存有关。
+- 音频是否能写入 MP4/WebM 仍取决于浏览器的 MediaRecorder 编码器；不添加音乐时会自动退化为原有纯视频录制。
 
 ## 品牌与界面规范
 

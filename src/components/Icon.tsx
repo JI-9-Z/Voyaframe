@@ -1,6 +1,6 @@
 import type { ReactNode, SVGProps } from 'react'
 
-export type IconName = 'add' | 'alert' | 'arrowDown' | 'arrowUp' | 'car' | 'chevronDown' | 'chevronUp' | 'close' | 'download' | 'expand' | 'file' | 'grip' | 'pause' | 'plane' | 'play' | 'record' | 'replay' | 'reset' | 'search' | 'settings' | 'ship' | 'train' | 'trash' | 'undo' | 'upload' | 'zoomIn' | 'zoomOut'
+export type IconName = 'add' | 'alert' | 'arrowDown' | 'arrowUp' | 'car' | 'chevronDown' | 'chevronUp' | 'close' | 'download' | 'expand' | 'file' | 'grip' | 'image' | 'music' | 'pause' | 'plane' | 'play' | 'record' | 'replay' | 'reset' | 'search' | 'settings' | 'ship' | 'story' | 'train' | 'trash' | 'undo' | 'upload' | 'zoomIn' | 'zoomOut'
 
 interface Props extends SVGProps<SVGSVGElement> { name: IconName; size?: number }
 
@@ -19,6 +19,8 @@ export function Icon({ name, size = 18, ...props }: Props) {
     expand: <><path d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5" /></>,
     file: <><path d="M6 3h8l4 4v14H6z" /><path d="M14 3v5h5M9 13h6M9 17h6" /></>,
     grip: <><circle cx="9" cy="7" r="1" fill="currentColor" stroke="none" /><circle cx="15" cy="7" r="1" fill="currentColor" stroke="none" /><circle cx="9" cy="12" r="1" fill="currentColor" stroke="none" /><circle cx="15" cy="12" r="1" fill="currentColor" stroke="none" /><circle cx="9" cy="17" r="1" fill="currentColor" stroke="none" /><circle cx="15" cy="17" r="1" fill="currentColor" stroke="none" /></>,
+    image: <><rect x="3" y="4" width="18" height="16" rx="2" /><circle cx="9" cy="10" r="2" /><path d="m4 17 5-4 3 3 3-2 5 4" /></>,
+    music: <><path d="M9 18V5l11-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="17" cy="16" r="3" /></>,
     pause: <><path d="M9 5v14M15 5v14" /></>,
     plane: <path d="m3 13 7-2 4-7 2 .5-2 6 6-1.5 1 2-7 3-1 6-2-.5.5-7-1.5-2 3-1.5-1 1.5-4-1Z" />,
     play: <path d="m8 5 11 7-11 7Z" />,
@@ -28,6 +30,7 @@ export function Icon({ name, size = 18, ...props }: Props) {
     search: <><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4 4" /></>,
     settings: <><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1a1.7 1.7 0 0 0 1.9.3A1.7 1.7 0 0 0 10 3V2.8h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z" /></>,
     ship: <><path d="m4 15 8-4 8 4-2 4H6z" /><path d="M9 11V6h6v5M4 21c2 1 4 1 6 0 2 1 4 1 6 0 2 1 3 1 4 0" /></>,
+    story: <><path d="M5 4h14v16H5z" /><path d="M8 8h8M8 12h8M8 16h5" /></>,
     train: <><rect x="6" y="3" width="12" height="15" rx="3" /><path d="M8.5 8h7M9 21l3-3 3 3M9 14h.01M15 14h.01" /></>,
     trash: <><path d="M5 7h14M9 7V4h6v3M8 10v8M12 10v8M16 10v8M7 7l1 14h8l1-14" /></>,
     undo: <><path d="M9 7 4 12l5 5" /><path d="M5 12h8a6 6 0 0 1 6 6" /></>,

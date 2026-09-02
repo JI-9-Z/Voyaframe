@@ -8,10 +8,10 @@ export function useVideoRecorder() {
   const [error, setError] = useState<string | null>(null)
   const sessionRef = useRef<RecordingSession | null>(null)
   const support = getRecordingSupport()
-  const start = useCallback((canvas: HTMLCanvasElement, tripName: string, language: Language) => {
+  const start = useCallback((canvas: HTMLCanvasElement, tripName: string, language: Language, audioStream?: MediaStream | null) => {
     setError(null)
     try {
-      const session = startCanvasRecording(canvas, tripName)
+      const session = startCanvasRecording(canvas, tripName, undefined, audioStream)
       if (!session) { setError(t(language, 'unsupported')); return false }
       sessionRef.current = session; setIsRecording(true); return true
     } catch (reason) { setError(reason instanceof Error ? reason.message : t(language, 'cannotStart')); return false }

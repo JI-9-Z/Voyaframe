@@ -1,15 +1,15 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { getTimelineState, getTotalDuration } from '../lib/animationTimeline'
-import type { AnimationStatus, Speed, TripLeg } from '../types'
+import type { AnimationStatus, Speed, TripLeg, TripStory } from '../types'
 
-export function useTripAnimation(legs: TripLeg[], speed: Speed) {
+export function useTripAnimation(legs: TripLeg[], speed: Speed, story: Pick<TripStory, 'introDuration' | 'outroDuration'>) {
   const segmentCount = legs.length
   const [status, setStatus] = useState<AnimationStatus>('idle')
   const [time, setTime] = useState(0)
   const timeRef = useRef(0)
   const statusRef = useRef<AnimationStatus>('idle')
   const lastFrameRef = useRef<number | null>(null)
-  const totalDuration = getTotalDuration(legs, speed)
+  const totalDuration = getTotalDuration(legs, speed, story)
   const updateStatus = useCallback((next: AnimationStatus) => { statusRef.current = next; setStatus(next) }, [])
 
   useEffect(() => {
@@ -50,5 +50,5 @@ export function useTripAnimation(legs: TripLeg[], speed: Speed) {
   const startRecording = useCallback(() => { timeRef.current = 0; setTime(0); updateStatus('recording') }, [updateStatus])
   const stopRecording = useCallback(() => updateStatus('idle'), [updateStatus])
 
-  return { status, time, totalDuration, timeline: getTimelineState(time, legs, speed), play, pause, replay, seek, startRecording, stopRecording }
+  return { status, time, totalDuration, timeline: getTimelineState(time, legs, speed, story), play, pause, replay, seek, startRecording, stopRecording }
 }
